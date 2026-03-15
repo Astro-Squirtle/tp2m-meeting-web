@@ -1,25 +1,13 @@
-// components
-import { Navbar, Footer } from "@/components";
-
-// sections
+// app/page.tsx
 import Hero from "./hero";
-import SponsoredBy from "./sponsored-by";
-import AboutEvent from "./about-event";
-import OurStats from "./our-stats";
-import EventContent from "./event-content";
-import Faq from "./faq";
+import AboutEvent from "./about-event"; 
+import Footer from "@/components/footer";
 
-export default function Portfolio() {
+export default function Page() {
   return (
     <>
-      <Navbar />
       <Hero />
-      <SponsoredBy />
       <AboutEvent />
-      <OurStats />
-      <EventContent />
-      <Faq />
-      <Footer />
     </>
   );
 }

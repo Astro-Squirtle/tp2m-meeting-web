@@ -24,11 +24,13 @@ export function EventContentCard({
   img,
 }: EventContentCardProps) {
   return (
+    /* @ts-ignore */
     <Card
       color="transparent"
       shadow={false}
       className="lg:!flex-row mb-10 lg:items-end"
     >
+      {/* @ts-ignore */}
       <CardHeader
         floated={false}
         shadow={false}
@@ -42,17 +44,22 @@ export function EventContentCard({
           className="h-full w-full object-cover"
         />
       </CardHeader>
+      {/* @ts-ignore */}
       <CardBody className="col-span-full lg:col-span-3">
+        {/* @ts-ignore */}
         <Typography variant="h6" color="blue-gray" className="mb-4">
           {panel}
         </Typography>
+        {/* @ts-ignore */}
         <Typography variant="h2" color="blue-gray" className="mb-4 font-medium">
           {title}
         </Typography>
+        {/* @ts-ignore */}
         <Typography className="mb-12 md:w-8/12 font-medium !text-gray-500">
           {des}
         </Typography>
         <div className="flex items-center gap-4">
+          {/* @ts-ignore */}
           <Avatar
             variant="circular"
             src="/logos/spotify-logo.png"
@@ -60,9 +67,11 @@ export function EventContentCard({
             size="lg"
           />
           <div>
+            {/* @ts-ignore */}
             <Typography variant="h6" color="blue-gray" className="mb-0.5">
               {name}
             </Typography>
+            {/* @ts-ignore */}
             <Typography variant="small" className="font-normal !text-gray-500">
               {position}
             </Typography>
