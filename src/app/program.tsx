@@ -24,6 +24,15 @@ const AGENDA_DATA = {
     date: "Aug 26",
     weekday: "Wednesday",
     events: [
+      { time: "09:30", task: "Recap & goal for today", speaker: "-" },
+      { time: "12:00", task: "Lunch", speaker: "-" },
+      { time: "13:00", task: "Discussion", speaker: "-" },
+    ]
+  },
+  "Day 4": {
+    date: "Aug 27",
+    weekday: "Thursday",
+    events: [
       { time: "09:30", task: "Future Roadmap Planning", speaker: "-" },
       { time: "12:00", task: "Lunch", speaker: "-" },
       { time: "13:00", task: "Discussion", speaker: "-" },
@@ -51,7 +60,7 @@ export default function ProgramPage() {
           </Typography>
           {/* @ts-ignore */}
           <Typography variant="h4" color="white" className="text-3xl opacity-80 font-normal">
-            August 24 - 26, 2026
+            August 24 - 27, 2026
           </Typography>
         </div>
       </div>
