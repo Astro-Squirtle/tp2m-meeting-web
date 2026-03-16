@@ -19,7 +19,7 @@ const SPEAKERS_DATA = [
         text: "TBD"
       }
     ],
-    fields: ["Supernovae", "Squirtle"]
+    fields: ["Supernovae"]
   },
   {
     name: "TBD",
@@ -36,7 +36,7 @@ const SPEAKERS_DATA = [
         text: "TBD"
       }
     ],
-    fields: ["Supernovae", "Squirtle"]
+    fields: ["Supernovae"]
   }
   // more...
 ];
