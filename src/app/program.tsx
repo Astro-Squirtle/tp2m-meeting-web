@@ -8,28 +8,25 @@ const AGENDA_DATA = {
     date: "Aug 24",
     weekday: "Monday",
     events: [
-      { time: "09:00", task: "Registration & Coffee", speaker: "-" },
-      { time: "10:00", task: "Opening Ceremony", speaker: "Prof. Ting-Wan Chen" },
-      { time: "11:00", task: "TP2M Project Overview", speaker: "Project Leads" },
-      { time: "14:00", task: "Technical Session: Telescope Control", speaker: "Engineering Team" },
+      { time: "09:00", task: "Registration", speaker: "-" },
+      { time: "12:00", task: "Lunch", speaker: "-" },
     ]
   },
   "Day 2": {
     date: "Aug 25",
     weekday: "Tuesday",
     events: [
-      { time: "09:30", task: "Science Talk: Supernovae", speaker: "Guest Speaker A" },
-      { time: "13:30", task: "Data Analysis Workshop", speaker: "Data Team" },
-      { time: "16:00", task: "Collaboration Discussion", speaker: "All Members" },
+      { time: "09:30", task: "Recap & goal for today", speaker: "-" },
+      { time: "12:00", task: "Lunch", speaker: "-" },
     ]
   },
   "Day 3": {
     date: "Aug 26",
     weekday: "Wednesday",
     events: [
-      { time: "10:00", task: "Future Roadmap Planning", speaker: "Management" },
-      { time: "12:00", task: "Closing Remarks", speaker: "Prof. Ting-Wan Chen" },
-      { time: "14:00", task: "Excursion / Lab Tour", speaker: "-" },
+      { time: "09:30", task: "Future Roadmap Planning", speaker: "-" },
+      { time: "12:00", task: "Lunch", speaker: "-" },
+      { time: "13:00", task: "Discussion", speaker: "-" },
     ]
   },
 };
