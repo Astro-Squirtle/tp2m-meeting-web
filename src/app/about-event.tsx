@@ -61,7 +61,7 @@ export function AboutEvent() {
           {/* MCI Instrument */}
           <div className="flex flex-col items-center text-justify">
             <img 
-              src="/image/mci.png" 
+              src="/image/MCI.png" 
               alt="MCI" 
               className="h-48 w-full object-contain mb-4 rounded-xl shadow-sm hover:shadow-md transition-shadow"
             />
@@ -76,7 +76,7 @@ export function AboutEvent() {
           {/* ESOPO Instrument */}
           <div className="flex flex-col items-center text-justify">
             <img 
-              src="/image/esopo.png" 
+              src="/image/ESOPO.png" 
               alt="ESOPO" 
               className="h-48 w-full object-contain mb-4 rounded-xl shadow-sm hover:shadow-md transition-shadow"
             />
