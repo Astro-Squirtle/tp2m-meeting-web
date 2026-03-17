@@ -60,7 +60,7 @@ export function AboutEvent() {
             <Typography variant="h6" color="blue" className="mb-2">MCI</Typography>
             {/* @ts-ignore */}
             <Typography className="text-sm text-gray-600">
-              The Multi-Color simultaneous Imager serves as the first-light instrument, utilizing three cameras for simultaneous $r', i', z'$ band observations, optimized for time-domain science.
+              {"The Multi-Color simultaneous Imager serves as the first-light instrument, utilizing three cameras for simultaneous $r', i', z'$ band observations, optimized for time-domain science."}
             </Typography>
           </div>
           <div>
