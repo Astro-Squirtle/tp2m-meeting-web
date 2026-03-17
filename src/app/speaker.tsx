@@ -6,38 +6,21 @@ import {Typography, Card, CardBody, Avatar} from "@material-tailwind/react";
 const SPEAKERS_DATA = [
   {
     name: "TBD",
-    affiliation: "affiliation",
-    avatar: "/image/avatar-placeholder.jpg", // figure
+    affiliation: "",
+    avatar: "", // figure
     bio: [
       {
-        text: "TBD"
+        text: ""
       },
       {
-        text: "TBD"
+        text: ""
       },
       {
-        text: "TBD"
+        text: ""
       }
     ],
-    fields: ["Supernovae"]
+    fields: [""]
   },
-  {
-    name: "TBD",
-    affiliation: "affiliation",
-    avatar: "/image/avatar-placeholder.jpg", // figure
-    bio: [
-      {
-        text: "TBD"
-      },
-      {
-        text: "TBD"
-      },
-      {
-        text: "TBD"
-      }
-    ],
-    fields: ["Supernovae"]
-  }
   // more...
 ];
 
@@ -46,7 +29,7 @@ export default function SpeakerPage() {
     <main className="min-h-screen bg-gray-50 pb-24">
       
       {/* Background */}
-      <div className="relative h-[60vh] w-full bg-[url('/image/tp2m.png')] bg-cover bg-center bg-no-repeat">
+      <div className="relative h-[60vh] w-full bg-[url('/image/tp2m.png')] bg-cover bg-[center_27%] bg-no-repeat">
         <div className="absolute inset-0 h-full w-full bg-black/60" />
         
         <div className="container relative z-10 mx-auto flex h-full flex-col items-center justify-center text-center">

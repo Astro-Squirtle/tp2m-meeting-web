@@ -8,34 +8,28 @@ const AGENDA_DATA = {
     date: "Aug 24",
     weekday: "Monday",
     events: [
-      { time: "09:00", task: "Registration", speaker: "-" },
-      { time: "12:00", task: "Lunch", speaker: "-" },
+      { time: "-", task: "Coming Soon", speaker: "-" },
     ]
   },
   "Day 2": {
     date: "Aug 25",
     weekday: "Tuesday",
     events: [
-      { time: "09:30", task: "Recap & goal for today", speaker: "-" },
-      { time: "12:00", task: "Lunch", speaker: "-" },
+      { time: "-", task: "Coming Soon", speaker: "-" },
     ]
   },
   "Day 3": {
     date: "Aug 26",
     weekday: "Wednesday",
     events: [
-      { time: "09:30", task: "Recap & goal for today", speaker: "-" },
-      { time: "12:00", task: "Lunch", speaker: "-" },
-      { time: "13:00", task: "Discussion", speaker: "-" },
+      { time: "-", task: "Coming Soon", speaker: "-" },
     ]
   },
   "Day 4": {
     date: "Aug 27",
     weekday: "Thursday",
     events: [
-      { time: "09:30", task: "Future Roadmap Planning", speaker: "-" },
-      { time: "12:00", task: "Lunch", speaker: "-" },
-      { time: "13:00", task: "Discussion", speaker: "-" },
+      { time: "-", task: "Coming Soon", speaker: "-" },
     ]
   },
 };
@@ -49,7 +43,7 @@ export default function ProgramPage() {
     <main className="min-h-screen bg-gray-50">
       
       {/* Background Section */}
-      <div className="relative h-[60vh] w-full bg-[url('/image/tp2m.png')] bg-cover bg-center bg-no-repeat">
+      <div className="relative h-[60vh] w-full bg-[url('/image/tp2m.png')] bg-cover bg-[center_27%] bg-no-repeat">
         <div className="absolute inset-0 h-full w-full bg-black/60" />
         
         {/* Title */}

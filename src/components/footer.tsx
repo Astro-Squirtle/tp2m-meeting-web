@@ -7,8 +7,8 @@ const SPONSORS = [
   { name: "UNAM", logo: "/logos/UNAM.png" },
   { name: "SAO", logo: "/logos/SAO.png" }, 
   { name: "HNAS", logo: "/logos/HNAS.png" },
-  { name: "LAM", logo: "/logos/LAM.png" },
-  { name: "ASIAA", logo: "/logos/ASIAA.png" },
+  { name: "LAM", logo: "/logos/LAM.jpg" },
+  { name: "ASIAA", logo: "/logos/ASIAA.svg" },
 ];
 
 export function Footer() {
@@ -45,11 +45,15 @@ export function Footer() {
             <Typography variant="h6" color="blue-gray" className="mb-4 uppercase">
               Organized & Sponsored by
             </Typography>
-            <div className="flex flex-wrap gap-6 opacity-70 grayscale hover:grayscale-0 transition-all">
+            <div className="grid grid-cols-3 gap-8 md:gap-4 place-items-center max-w-4xl ml-32 -mr-8">
               {/* Logo */}
               {SPONSORS.map((s) => (
-                <div key={s.name} className="h-10 flex items-center">
-                   <span className="text-sm font-bold text-gray-400">{s.name}</span>
+                <div key={s.name} className="flex flex-col items-center gap-3 w-full">
+                   <img 
+                    src={s.logo} 
+                    alt={s.name} 
+                    className="h-20 w-auto object-contain transition-transform" 
+                  />
                 </div>
               ))}
             </div>

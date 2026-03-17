@@ -7,7 +7,7 @@ export default function VenuePage() {
     <main className="min-h-screen bg-white pb-20">
       
       {/* Background */}
-      <div className="relative h-[60vh] w-full bg-[url('/image/tp2m.png')] bg-cover bg-center bg-no-repeat">
+      <div className="relative h-[60vh] w-full bg-[url('/image/tp2m.png')] bg-cover bg-[center_27%] bg-no-repeat">
         <div className="absolute inset-0 h-full w-full bg-black/60" />
         
         <div className="container relative z-10 mx-auto flex h-full flex-col items-center justify-center text-center px-4">
@@ -46,7 +46,7 @@ export default function VenuePage() {
             <div className="mb-12">
               {/* @ts-ignore */}
               <Typography className="text-2xl lg:text-3xl font-medium text-gray-600 italic">
-                XF, XXX conference hall
+                TBD
               </Typography>
             </div>
 
