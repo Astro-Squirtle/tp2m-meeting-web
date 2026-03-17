@@ -101,7 +101,7 @@ export function Navbar() {
                 ? "bg-black text-white hover:bg-gray-900" 
                 : "bg-white text-black hover:bg-gray-100"
             }`}
-            onClick={() => window.open('你的註冊連結', '_blank')}
+            onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSclHq2AZ6bX12VVfjhYMFYMPot5Lx7-sO62UuEelBvh2M5wNA/viewform?usp=publish-editor', '_blank')}
           >
             Registration
           </Button>

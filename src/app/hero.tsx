@@ -29,7 +29,7 @@ function Hero() {
               color="white" 
               variant="gradient"
               className="m px-9 py-3 text-xl font-bold hover:scale-105 transition-all active:scale-95 shadow-2xl"
-              onClick={() => window.open('你的Google表單網址', '_blank')}
+              onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSclHq2AZ6bX12VVfjhYMFYMPot5Lx7-sO62UuEelBvh2M5wNA/viewform?usp=publish-editor', '_blank')}
             >
               Register Now
             </Button>

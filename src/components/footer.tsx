@@ -3,9 +3,12 @@
 import {Typography} from "@material-tailwind/react";
 
 const SPONSORS = [
-  { name: "TBD", logo: "/logos/great-lab.png" },
-  { name: "TBD", logo: "/logos/ntu.png" },
-  { name: "TBD", logo: "/logos/nstc.png" }, 
+  { name: "NCU", logo: "/logos/NCU.png" },
+  { name: "UNAM", logo: "/logos/UNAM.png" },
+  { name: "SAO", logo: "/logos/SAO.png" }, 
+  { name: "HNAS", logo: "/logos/HNAS.png" },
+  { name: "LAM", logo: "/logos/LAM.png" },
+  { name: "ASIAA", logo: "/logos/ASIAA.png" },
 ];
 
 export function Footer() {
@@ -23,7 +26,7 @@ export function Footer() {
             <div className="space-y-2">
               {/* @ts-ignore */}
               <Typography className="text-sm font-normal text-gray-600">
-                <strong>Email:</strong> TBD
+                <strong>Email:</strong> tm2m.meeting@gmail.com
               </Typography>
               {/* @ts-ignore */}
               <Typography className="text-sm font-normal text-gray-600">
@@ -43,10 +46,9 @@ export function Footer() {
               Organized & Sponsored by
             </Typography>
             <div className="flex flex-wrap gap-6 opacity-70 grayscale hover:grayscale-0 transition-all">
-              {/* 這裡放 Logo 圖片 */}
+              {/* Logo */}
               {SPONSORS.map((s) => (
                 <div key={s.name} className="h-10 flex items-center">
-                   {/* 如果還沒準備好圖片，可以用文字代替 */}
                    <span className="text-sm font-bold text-gray-400">{s.name}</span>
                 </div>
               ))}
