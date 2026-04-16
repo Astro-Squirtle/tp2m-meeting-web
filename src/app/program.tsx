@@ -8,35 +8,35 @@ const AGENDA_DATA = {
     date: "Aug 24",
     weekday: "Monday",
     events: [
-      { time: "-", task: "Science Meetings – Information Forthcoming", speaker: "-" },
+      { time: "-", task: "Science Meetings (Details Coming Soon)", speaker: "-" },
     ]
   },
   "Day 2": {
     date: "Aug 25",
     weekday: "Tuesday",
     events: [
-      { time: "-", task: "Science Meetings – Information Forthcoming", speaker: "-" },
+      { time: "-", task: "Science Meetings (Details Coming Soon)", speaker: "-" },
     ]
   },
   "Day 3": {
     date: "Aug 26",
     weekday: "Wednesday",
     events: [
-      { time: "-", task: "TP2m partner meetings – Information Forthcoming", speaker: "-" },
+      { time: "-", task: "TP2m partner meetings (Details Coming Soon)", speaker: "-" },
     ]
   },
   "Day 4": {
     date: "Aug 27",
     weekday: "Thursday",
     events: [
-      { time: "-", task: "TP2m partner meetings – Information Forthcoming", speaker: "-" },
+      { time: "-", task: "TP2m partner meetings (Details Coming Soon)", speaker: "-" },
     ]
   },
   "Day 5": {
     date: "Aug 28",
     weekday: "Friday",
     events: [
-      { time: "-", task: "Cultural excursion – Information Forthcoming", speaker: "-" },
+      { time: "-", task: "Cultural excursion (Details Coming Soon)", speaker: "-" },
     ]
   }
 };
