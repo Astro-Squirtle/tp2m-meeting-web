@@ -32,6 +32,13 @@ const AGENDA_DATA = {
       { time: "-", task: "Coming Soon", speaker: "-" },
     ]
   },
+  "Day 5": {
+    date: "Aug 28",
+    weekday: "Friday",
+    events: [
+      { time: "-", task: "Coming Soon", speaker: "-" },
+    ]
+  }
 };
 
 type DayKey = keyof typeof AGENDA_DATA;
@@ -54,7 +61,7 @@ export default function ProgramPage() {
           </Typography>
           {/* @ts-ignore */}
           <Typography variant="h4" color="white" className="text-3xl opacity-80 font-normal">
-            August 24 - 27, 2026
+            August 24 - 28, 2026
           </Typography>
         </div>
       </div>

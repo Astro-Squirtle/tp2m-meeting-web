@@ -19,7 +19,7 @@ function Hero() {
           {/* Subtitle */}
           {/* @ts-ignore */}
           <Typography variant="h3" color="white" className="mb-24 tracking-[0.02em] uppercase">
-            August 24-27, 2026 <span className="mx-2">|</span> Henan Academy of Sciences
+            August 24-28, 2026 <span className="mx-2">|</span> Henan Academy of Sciences
             </Typography>
           
           <div className="flex items-center gap-4">
