@@ -19,7 +19,8 @@ export function AboutEvent() {
           variant="lead"
           className="text-justify font-normal !text-gray-600 leading-relaxed"
         >
-          Time-domain astronomy is entering a new era driven by large-scale surveys, where photometric discoveries are rapidly increasing in volume, cadence, and depth. However, this progress has also highlighted a growing imbalance: while detections are abundant, spectroscopic resources remain limited. Spectroscopy—across high, medium, and low resolution—is essential for understanding the physical nature and evolution of astrophysical sources, making it a critical component of modern observational astronomy, alongside multi-band photometric observations.
+          Time domain astronomy is entering a new era driven by large scale surveys, where photometric discoveries are rapidly increasing in volume, cadence, and depth. However, this progress has also highlighted a growing imbalance: while detections are abundant, spectroscopic resources remain limited. Spectroscopy, spanning a wide range of resolutions from low to high, is essential for understanding the physical nature and evolution of astrophysical sources, making it a critical component of modern observational astronomy, alongside multi-band photometric observations.
+
         </Typography>
 
         {/* @ts-ignore */}
