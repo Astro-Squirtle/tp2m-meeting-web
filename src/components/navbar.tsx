@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { usePathname } from "next/navigation";
+import { Telescope } from "lucide-react";
 import {
   Navbar as MTNavbar,
   Collapse,
@@ -37,6 +38,7 @@ function NavItem({ children, href, isWhiteText }: { children: React.ReactNode; h
 
 const NAV_MENU = [
   { name: "Home", icon: HomeIcon, href: "/" },          
+  { name: "About TP2m", icon: Telescope, href: "/about-tp2m" },
   { name: "Program", icon: CalendarDaysIcon, href: "/program" },
   { name: "Speaker", icon: UserGroupIcon, href: "/speaker" },   
   { name: "Venue", icon: MapPinIcon, href: "/venue" },        
@@ -140,7 +142,7 @@ export function Navbar() {
             variant="gradient" 
             color="blue" 
             className="mt-6"
-            onClick={() => window.open('你的註冊連結', '_blank')}
+            onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSclHq2AZ6bX12VVfjhYMFYMPot5Lx7-sO62UuEelBvh2M5wNA/viewform?usp=publish-editor', '_blank')}
           >
             Register Now
           </Button>

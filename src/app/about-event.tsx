@@ -5,16 +5,11 @@ import { Typography } from "@material-tailwind/react";
 export function AboutEvent() {
   return (
     <section className="container mx-auto flex flex-col items-center px-4 py-16">
-      {/* Small title */}
-      {/* @ts-ignore */}
-      <Typography variant="h1" className="text-center mb-2 uppercase tracking-wider" color="blue">
-        Introduction
-      </Typography>
       
       {/* Main title */}
       {/* @ts-ignore */}
       <Typography variant="h3" className="text-center mb-6" color="blue-gray">
-        About the TP2M Project
+        Rationale
       </Typography>
       
       {/* Simple introduction text */}
@@ -24,7 +19,7 @@ export function AboutEvent() {
           variant="lead"
           className="text-justify font-normal !text-gray-600 leading-relaxed"
         >
-          As a multi-purpose facility, the TP2m telescope is designed to address a broad range of scientific objectives across several domains of modern astronomy. Its versatility allows it to support general astronomical studies, including stellar astrophysics, investigations of the interstellar medium (ISM), and research in both Galactic and extragalactic astronomy. This capability ensures that the telescope contributes to fundamental questions regarding the structure, composition, and evolution of stars and galaxies.
+          Time-domain astronomy is entering a new era driven by large-scale surveys, where photometric discoveries are rapidly increasing in volume, cadence, and depth. However, this progress has also highlighted a growing imbalance: while detections are abundant, spectroscopic resources remain limited. Spectroscopy—across high, medium, and low resolution—is essential for understanding the physical nature and evolution of astrophysical sources, making it a critical component of modern observational astronomy, alongside multi-band photometric observations.
         </Typography>
 
         {/* @ts-ignore */}
@@ -32,78 +27,18 @@ export function AboutEvent() {
           variant="lead"
           className="mt-6 text-justify font-normal !text-gray-600 leading-relaxed"
         >
-          Beyond general applications, the TP2m is specifically optimized for Time Domain Astronomy and the study of the Variable Universe. Its technical framework is ideal for monitoring transient events and characterizing objects such as cataclysmic variables (CVs) and near-Earth objects (NEOs), where rapid and repeated observations are essential.
+          Mid-sized telescopes equipped with flexible instrumentation are uniquely positioned to address this challenge. The Trans-Pacific 2-meter Telescope (TP2m) is designed to provide efficient and accessible observational capabilities, supporting both multi-color photometry and spectroscopy, enabled by three key scientific instruments: a multi-color imager (MCI), a dual-arm spectrograph (ESOPO), and a near-infrared camera (IR camera).
         </Typography>
 
-        {/* Key Subsystems Section */}
         {/* @ts-ignore */}
-        <Typography variant="h4" color="blue-gray" className="mt-12 mb-4 text-left uppercase">
-          Key Subsystems
+        <Typography
+          variant="lead"
+          className="mt-6 text-justify font-normal !text-gray-600 leading-relaxed"
+        >
+          This workshop aims not only to explore the scientific potential of TP2m, but also to bring together the community to discuss broader opportunities in the evolving time-domain landscape, fostering collaboration and shaping future observational strategies.
         </Typography>
-        {/* @ts-ignore */}
-        <div className="text-gray-600 font-normal text-lg">
-          <div className="space-y-1">
-            <p><strong>Telescope:</strong> 2m F8 RC telescope, Alt-Az mount</p>
-            <p><strong>Instrument:</strong> MCI, IR-Cam, ESOPO</p>
-            <p><strong>Software:</strong> Observing control software</p>
-            <p><strong>Infrastructure:</strong> Site, Road Access, Electricity, Network, Water Supply</p>
-            <p><strong>Building:</strong> Enclosure, Dome system, Telescope Pier, Control Room, Instrument Supporting</p>
-          </div>
+
         </div>
-
-        {/* Instruments Section */}
-        {/* @ts-ignore */}
-        <Typography variant="h4" color="blue-gray" className="mt-12 mb-8 text-left uppercase">
-          Scientific Instruments
-        </Typography>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-24 mt-4">
-          {/* MCI Instrument */}
-          <div className="flex flex-col items-center text-justify">
-            <img 
-              src="/image/MCI.png" 
-              alt="MCI" 
-              className="h-48 w-full object-contain mb-4 rounded-xl shadow-sm hover:shadow-md transition-shadow"
-            />
-            {/* @ts-ignore */}
-            <Typography variant="h6" color="blue" className="mb-2">MCI</Typography>
-            {/* @ts-ignore */}
-            <Typography className="text-base text-gray-900 px-2">
-              {"The Multi-Color simultaneous Imager serves as the first-light instrument, utilizing three cameras for simultaneous r', i', z' band observations, optimized for time-domain science."}
-            </Typography>
-          </div>
-
-          {/* ESOPO Instrument */}
-          <div className="flex flex-col items-center text-justify">
-            <img 
-              src="/image/ESOPO.png" 
-              alt="ESOPO" 
-              className="h-48 w-full object-contain mb-4 rounded-xl shadow-sm hover:shadow-md transition-shadow"
-            />
-            {/* @ts-ignore */}
-            <Typography variant="h6" color="blue" className="mb-2">ESOPO</Typography>
-            {/* @ts-ignore */}
-            <Typography className="text-base text-gray-900">
-              A unique dual-arm (blue and red) low-to-medium resolution spectrograph provided by UNAM, designed for specialized long-slit spectroscopy.
-            </Typography>
-          </div>
-
-          {/* IR Camera Instrument */}
-          <div className="flex flex-col items-center text-justify">
-            <img 
-              src="/image/IR CAM.png" 
-              alt="IR Camera" 
-              className="h-48 w-full object-contain mb-4 rounded-xl shadow-sm hover:shadow-md transition-shadow"
-            />
-            {/* @ts-ignore */}
-            <Typography variant="h6" color="blue" className="mb-2">IR Camera</Typography>
-            {/* @ts-ignore */}
-            <Typography className="text-base text-gray-900 px-2">
-              Featuring a HAWAII-2RG™ detector array, this camera provides high-sensitivity imaging in the near-infrared spectrum up to 2.5µm.
-            </Typography>
-          </div>
-        </div>
-      </div>
     </section>
   );
 }
