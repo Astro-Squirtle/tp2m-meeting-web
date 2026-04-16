@@ -2,6 +2,7 @@
 import React from "react";
 import { usePathname } from "next/navigation";
 import { Telescope } from "lucide-react";
+
 import {
   Navbar as MTNavbar,
   Collapse,
@@ -15,7 +16,7 @@ import {
   UserGroupIcon,
   MapPinIcon,
   XMarkIcon,
-  Bars3Icon,
+  Bars3Icon
 } from "@heroicons/react/24/solid";
 
 // --- NavItem component ---
