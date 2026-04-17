@@ -39,6 +39,46 @@ export function AboutEvent() {
           This workshop aims not only to explore the scientific potential of TP2m, but also to bring together the community to discuss broader opportunities in the evolving time-domain landscape, fostering collaboration and shaping future observational strategies.
         </Typography>
 
+        {/* --- SOC Section --- */}
+        {/* @ts-ignore */}
+        <Typography variant="h4" color="blue-gray" className="mt-16 mb-6 text-left uppercase">
+          Scientific Organizing Committee (SOC)
+        </Typography>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-gray-700">
+          <ul className="list-disc list-inside space-y-2">
+            <li><strong>Antonio De Ugarte Postigo</strong> </li>
+            <li><strong>Chow-Choong Ngeow</strong> </li>
+            <li><strong>Diego Hernando González Buitrago</strong> </li>
+            <li><strong>Janet Ting-Wan Chen</strong> </li>
+          </ul>
+          <ul className="list-disc list-inside space-y-2">
+            <li><strong>Lester Ivan Fox Machado</strong> </li>
+            <li><strong>Rosa Leticia Becerra Godínez</strong> </li>
+            <li><strong>Sheng Yang</strong> </li>
+            <li><strong>Wenwen Zuo</strong> </li>
+          </ul>
+        </div>
+
+        {/* --- LOC Section --- */}
+        {/* @ts-ignore */}
+        <Typography variant="h4" color="blue-gray" className="mt-16 mb-6 text-left uppercase">
+          Local Organizing Committee (LOC)
+        </Typography>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-gray-700 font-medium">
+            <ul className="list-disc list-inside space-y-2">
+              <li><strong>Darshan Kumar</strong> </li>
+              <li><strong>Dingyue Shi</strong> </li>
+              <li><strong>Jingjing Shao</strong> </li>
+              <li><strong>Lingrui Wang</strong> </li>
+              <li><strong>Park Chan</strong> </li>
+            </ul>
+            <ul className="list-disc list-inside space-y-2">
+              <li><strong>Sheng Yang</strong> </li>
+              <li><strong>Shipeng Wang</strong> </li>
+              <li><strong>Wanxin Sun</strong> </li>
+              <li><strong>Yuhang Zhao</strong> </li>
+            </ul>
+          </div>
         </div>
     </section>
   );
