@@ -16,7 +16,9 @@ import {
   UserGroupIcon,
   MapPinIcon,
   XMarkIcon,
-  Bars3Icon
+  Bars3Icon,
+  UsersIcon,
+  MicrophoneIcon
 } from "@heroicons/react/24/solid";
 
 // --- NavItem component ---
@@ -41,7 +43,8 @@ const NAV_MENU = [
   { name: "Home", icon: HomeIcon, href: "/" },          
   { name: "About TP2m", icon: Telescope, href: "/about-tp2m" },
   { name: "Program", icon: CalendarDaysIcon, href: "/program" },
-  { name: "Speaker", icon: UserGroupIcon, href: "/speaker" },   
+  { name: "Speaker", icon: MicrophoneIcon, href: "/speaker" },  
+  { name: "Participants", icon: UsersIcon, href: "/participants" }, 
   { name: "Venue", icon: MapPinIcon, href: "/venue" },        
 ];
 
