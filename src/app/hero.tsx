@@ -6,21 +6,28 @@ function Hero() {
   return (
     // Background
     <div className="relative min-h-screen w-full bg-[url('/image/tp2m.png')] bg-cover bg-no-repeat">
-      <div className="absolute inset-0 h-full w-full bg-black/50" />
+      <div className="absolute inset-0 h-full w-full bg-black/60" />
         <div className="grid min-h-screen px-8">
           <div className="container relative z-10 my-auto mx-auto grid place-items-center text-center">
           
           {/* Title */}
           {/* @ts-ignore */}
-          <Typography variant="h1" color="white" className="lg:max-w-4xl text-5xl lg:text-7xl font-bold mb-8 leading-tight">
+          <Typography variant="h1" color="white" className="lg:max-w-4xl text-5xl lg:text-7xl font-bold mb-20 leading-tight">
             TP2M Project Kickoff Meeting
           </Typography>
 
           {/* Subtitle */}
           {/* @ts-ignore */}
-          <Typography variant="h3" color="white" className="mb-24 tracking-[0.02em] uppercase">
+          <Typography variant="h3" color="white" className="mb-6 text-3xl tracking-[0.02em] uppercase">
             August 24-28, 2026 <span className="mx-2">|</span> Henan Academy of Sciences
-            </Typography>
+          </Typography>
+
+          {/* Description */}
+          {/* @ts-ignore */}
+          <Typography variant="h2" color="white" className="mb-16 font-bold normal-case opacity-90 tracking-normal text-xl lg:text-2xl">
+            Both in-person and virtual participation are welcome!
+          </Typography>
+
           
           <div className="flex items-center gap-4">
             {/* @ts-ignore */}
@@ -33,8 +40,6 @@ function Hero() {
             >
               Register Now
             </Button>
-              
-              
           </div>
         </div>
       </div>

@@ -8,7 +8,7 @@ export function AboutTP2m() {
               
     {/* Background Section */}
       <div className="relative h-[60vh] w-full bg-[url('/image/tp2m.png')] bg-cover bg-[center_27%] bg-no-repeat">
-       	<div className="absolute inset-0 h-full w-full bg-black/60" />
+       	<div className="absolute inset-0 h-full w-full bg-black/65" />
 
       	{/* Title */}
       	<div className="container relative z-10 mx-auto flex h-full flex-col items-center justify-center text-center">
@@ -44,7 +44,7 @@ export function AboutTP2m() {
           variant="lead"
           className="mt-6 text-justify font-normal !text-gray-600 leading-relaxed"
         >
-          Beyond general applications, the TP2m is specifically optimized for Time Domain Astronomy and the study of the Variable Universe. Its technical framework is ideal for monitoring transient events and characterizing objects such as cataclysmic variables (CVs) and near-Earth objects (NEOs), where rapid and repeated observations are essential.
+          Beyond general applications, the TP2m is specifically optimized for Time-Domain Astronomy and the study of the Variable Universe. Its technical framework is ideal for rapid and repeated observations of transient and variable phenomena, including supernovae, kilonovae, gamma-ray bursts, fast X-ray transients, cataclysmic variables, and near-Earth objects. These science cases require timely response, flexible scheduling, and sustained monitoring, all of which are central strengths of the TP2m system.
         </Typography>
 
         {/* Key Subsystems Section */}

@@ -26,7 +26,7 @@ export function Footer() {
             <div className="space-y-2">
               {/* @ts-ignore */}
               <Typography className="text-sm font-normal text-gray-600">
-                <strong>Email:</strong> tm2m.meeting@gmail.com
+                <strong>Email:</strong> tp2m.meeting@gmail.com
               </Typography>
               {/* @ts-ignore */}
               <Typography className="text-sm font-normal text-gray-600">

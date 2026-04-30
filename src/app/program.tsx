@@ -51,7 +51,7 @@ export default function ProgramPage() {
       
       {/* Background Section */}
       <div className="relative h-[60vh] w-full bg-[url('/image/tp2m.png')] bg-cover bg-[center_27%] bg-no-repeat">
-        <div className="absolute inset-0 h-full w-full bg-black/60" />
+        <div className="absolute inset-0 h-full w-full bg-black/65" />
         
         {/* Title */}
         <div className="container relative z-10 mx-auto flex h-full flex-col items-center justify-center text-center">
