@@ -6,13 +6,13 @@ function Hero() {
   return (
     // Background
     <div className="relative min-h-screen w-full bg-[url('/image/tp2m.png')] bg-cover bg-no-repeat">
-      <div className="absolute inset-0 h-full w-full bg-black/60" />
+      <div className="absolute inset-0 h-full w-full bg-black/55" />
         <div className="grid min-h-screen px-8">
           <div className="container relative z-10 my-auto mx-auto grid place-items-center text-center">
           
           {/* Title */}
           {/* @ts-ignore */}
-          <Typography variant="h1" color="white" className="lg:max-w-4xl text-5xl lg:text-7xl font-bold mb-20 leading-tight">
+          <Typography variant="h1" color="white" className="lg:max-w-4xl text-5xl lg:text-7xl font-bold mb-16 leading-tight">
             TP2M Project Kickoff Meeting
           </Typography>
 
