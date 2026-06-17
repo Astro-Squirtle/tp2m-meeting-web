@@ -5,8 +5,8 @@ import {Typography, Card, CardBody, Avatar} from "@material-tailwind/react";
 // Speaker info
 const SPEAKERS_DATA = [
   {
-    name: "TBD",
-    affiliation: "",
+    name: "Antonio Martín-Carrillo",
+    affiliation: "University College Dublin",
     avatar: "", // figure
     bio: [
       {
@@ -21,7 +21,125 @@ const SPEAKERS_DATA = [
     ],
     fields: [""]
   },
-  // more...
+  {
+    name: "Bing Zhang",
+    affiliation: "The University of Hong Kong",
+    avatar: "", // figure
+    bio: [
+      {
+        text: ""
+      },
+      {
+        text: ""
+      },
+      {
+        text: ""
+      }
+    ],
+    fields: [""]
+  },
+  {
+    name: "Christina Thöne",
+    affiliation: "Czech Academy of Sciences, Astronomical Institute",
+    avatar: "", // figure
+    bio: [
+      {
+        text: ""
+      },
+      {
+        text: ""
+      },
+      {
+        text: ""
+      }
+    ],
+    fields: [""]
+  },
+  {
+    name: "Fabio De Colle",
+    affiliation: "Institute of Nuclear Sciences ICN-UNAM",
+    avatar: "", // figure
+    bio: [
+      {
+        text: ""
+      },
+      {
+        text: ""
+      },
+      {
+        text: ""
+      }
+    ],
+    fields: [""]
+  },
+  {
+    name: "Juan Venancio",
+    affiliation: "University of St Andrews",
+    avatar: "", // figure
+    bio: [
+      {
+        text: ""
+      },
+      {
+        text: ""
+      },
+      {
+        text: ""
+      }
+    ],
+    fields: [""]
+  },
+  {
+    name: "Kaew Samaporn Tinyanont",
+    affiliation: "National Astronomical Research Institute of Thailand",
+    avatar: "", // figure
+    bio: [
+      {
+        text: ""
+      },
+      {
+        text: ""
+      },
+      {
+        text: ""
+      }
+    ],
+    fields: [""]
+  },
+  {
+    name: "Ramandeep Gill",
+    affiliation: "Universidad Nacional Autónoma de México",
+    avatar: "", // figure
+    bio: [
+      {
+        text: ""
+      },
+      {
+        text: ""
+      },
+      {
+        text: ""
+      }
+    ],
+    fields: [""]
+  },
+  {
+    name: "Shiang-Yu Wang",
+    affiliation: "Institute of Astronomy & Astrophysics, Academia Sinica",
+    avatar: "", // figure
+    bio: [
+      {
+        text: ""
+      },
+      {
+        text: ""
+      },
+      {
+        text: ""
+      }
+    ],
+    fields: [""]
+  },
 ];
 
 export default function SpeakerPage() {
