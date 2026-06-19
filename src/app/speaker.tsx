@@ -40,7 +40,7 @@ const SPEAKERS_DATA = [
   },
   {
     name: "Christina Thöne",
-    affiliation: "Czech Academy of Sciences, Astronomical Institute",
+    affiliation: "Georgian National Astrophysical Observatory",
     avatar: "", // figure
     bio: [
       {
