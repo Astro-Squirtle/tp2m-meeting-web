@@ -387,7 +387,7 @@ export default function VenuePage() {
               </h3>
               <p className="text-gray-700 leading-relaxed">
                 Purchase an international roaming plan from your mobile carrier before
-                arriving. Roaming data routes through your home country&rsquo;s servers, allowing
+                arriving. Roaming data routes through your home country’s servers, allowing
                 access to Google Maps.{" "}
                 <span className="font-medium text-gray-900">
                   Check costs in advance — roaming fees can be high.
