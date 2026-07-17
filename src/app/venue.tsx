@@ -377,7 +377,7 @@ export default function VenuePage() {
 
           {/* @ts-ignore */}
           <Typography className="text-xl font-normal text-gray-700 mb-8 leading-relaxed">
-            Google Maps may not work reliably in China if you’re connected to local networks or Wi-Fi due to regional restrictions. Here are solutions:
+            Google Maps may not work reliably in China if you are connected to local networks or Wi-Fi due to regional restrictions. Here are solutions:
           </Typography>
 
           <ul className="space-y-8">
