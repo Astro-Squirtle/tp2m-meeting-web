@@ -66,13 +66,14 @@ export function AboutEvent() {
         </Typography>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-gray-700 font-medium">
             <ul className="list-disc list-inside space-y-2">
+              <li><strong>Cheng-Han Lai</strong> </li>
               <li><strong>Darshan Kumar</strong> </li>
               <li><strong>Dingyue Shi</strong> </li>
               <li><strong>Jingjing Shao</strong> </li>
               <li><strong>Lingrui Wang</strong> </li>
-              <li><strong>Park Chan</strong> </li>
             </ul>
             <ul className="list-disc list-inside space-y-2">
+              <li><strong>Park Chan</strong> </li>
               <li><strong>Sheng Yang</strong> </li>
               <li><strong>Shipeng Wang</strong> </li>
               <li><strong>Wanxin Sun</strong> </li>
