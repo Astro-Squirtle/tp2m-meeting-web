@@ -7,138 +7,90 @@ const SPEAKERS_DATA = [
   {
     name: "Antonio Martín-Carrillo",
     affiliation: "University College Dublin",
-    avatar: "", // figure
+    avatar: "/image/Antonio Martín-Carrillo.png", // figure
     bio: [
       {
-        text: ""
-      },
-      {
-        text: ""
-      },
-      {
-        text: ""
+        text: "Antonio Martín-Carrillo is a UCD Ad Astra Fellow / Assistant Professor in the School of Physics and a member of the Space Science Group at University College Dublin. His research focuses on the transient Universe, in particular the prompt and afterglow emission of gamma-ray bursts, using high-energy space observatories together with ground-based facilities such as UCD's Watcher robotic telescope. He is a member of the INTEGRAL multi-messenger group searching for gamma-ray counterparts to gravitational-wave and neutrino events, and of the ATHENA and THESEUS mission consortia. He is also an ambassador and collaborator on the Astropy project."
       }
     ],
-    fields: [""]
+    fields: ["Gamma-Ray Bursts", "Pulsars", "high-mass X-ray binaries", "robotic telescopes"]
   },
   {
     name: "Bing Zhang",
     affiliation: "The University of Hong Kong",
-    avatar: "", // figure
+    avatar: "/image/Bing Zhang.png", // figure
     bio: [
       {
-        text: ""
+        text: "Bing Zhang is Chair Professor of Astrophysics and Global STEM Scholar in the Department of Physics at the University of Hong Kong, and Founding Director of the Hong Kong Institute for Astronomy and Astrophysics (HKIAA). He is a theoretical astrophysicist working on high-energy astrophysics — black holes of various scales, neutron stars of various species, and the relativistic jets they launch. He is a world leader on the physical mechanisms of gamma-ray bursts, and in recent years has devoted most of his research to multi-messenger astrophysics and fast radio bursts. He serves as Mission Scientist for the Chinese–French SVOM GRB mission and chairs the multi-messenger science topical panel of the Einstein Probe, and was PI of the FAST FRB Key Science Project (2020–2025). He is the author of The Physics of Gamma-Ray Bursts and a Fellow of the American Physical Society."
       },
-      {
-        text: ""
-      },
-      {
-        text: ""
-      }
     ],
-    fields: [""]
+    fields: ["Gamma-Ray Bursts", "Fast radio bursts", "Electromagnetic counterparts of gravitational waves"]
   },
   {
     name: "Christina Thöne",
     affiliation: "Georgian National Astrophysical Observatory",
-    avatar: "", // figure
+    avatar: "/image/Christina Thöne.png", // figure
     bio: [
       {
-        text: ""
+        text: "(?) Christina C. Thöne is an observational astrophysicist at the Astronomical Institute of the Czech Academy of Sciences (Ondřejov). Her research centres on optical and near-infrared spectroscopy of massive stellar explosions and star-forming galaxies, with particular expertise in integral field spectroscopy. She works on supernova progenitors, high-redshift galaxies, and the chemical evolution of the Universe. She also holds a master's certificate in project management for technological projects in astronomy, and is active in university teaching and multilingual public outreach."
       },
-      {
-        text: ""
-      },
-      {
-        text: ""
-      }
     ],
-    fields: [""]
+    fields: ["Gamma-Ray Bursts", "Supernovae", "Galaxy"]
   },
   {
     name: "Fabio De Colle",
     affiliation: "Institute of Nuclear Sciences ICN-UNAM",
-    avatar: "", // figure
+    avatar: "/image/Fabio De Colle.png", // figure
     bio: [
       {
-        text: ""
-      },
-      {
-        text: ""
-      },
-      {
-        text: ""
+        text: "Fabio De Colle is a researcher at the Instituto de Ciencias Nucleares, Universidad Nacional Autónoma de México (UNAM), where he heads the department covering computational astrophysics. His research focuses on relativistic astrophysics and the physics of jets and high-energy transients — gamma-ray bursts, core-collapse supernovae, tidal disruption events, and common envelopes — using large-scale numerical simulations and high-performance computing to study their dynamics, radiation, and interaction with complex environments. He is the lead developer of the Mezcal code, a high-performance framework for Newtonian and relativistic hydrodynamics and MHD using adaptive mesh refinement and MPI parallelisation, and has recently incorporated machine learning and data science techniques into both simulation analysis and physical modelling."
       }
     ],
-    fields: [""]
+    fields: ["Gamma-Ray Bursts", "Core-collapse supernovae", "Tidal disruption events"]
   },
   {
     name: "Juan Venancio",
     affiliation: "University of St Andrews",
-    avatar: "", // figure
+    avatar: "/image/Juan Venancio.png", // figure
     bio: [
       {
-        text: ""
+        text: "Juan V. Hernández Santisteban is a Lecturer in Astronomy at the School of Physics and Astronomy, University of St Andrews. His research involves multi-wavelength — X-ray, ultraviolet, optical and infrared — observations of accreting compact objects, including white dwarfs, neutron stars, and stellar-mass and supermassive black holes. He is PI of a Las Cumbres Observatory Key Project carrying out reverberation mapping of active galactic nuclei using a world-wide network of telescopes, and is also active in transient astronomy and instrumentation as part of the science team behind OPTICam."
       },
-      {
-        text: ""
-      },
-      {
-        text: ""
-      }
     ],
-    fields: [""]
+    fields: ["Active Galactic Nuclei", "Accretion Physics", "Compact Objects"]
   },
   {
     name: "Kaew Samaporn Tinyanont",
     affiliation: "National Astronomical Research Institute of Thailand",
-    avatar: "", // figure
+    avatar: "/image/Kaew Samaporn Tinyanont.png", // figure
     bio: [
       {
-        text: ""
+        text: "Samaporn Kaew Tinyanont is a Staff Researcher at the National Astronomical Research Institute of Thailand (NARIT). He is an observational astronomer using telescopes around the world and in space to study the life and death of massive stars. Working from the ultraviolet to the infrared, he follows core-collapse supernovae from days to decades after explosion to trace their explosion properties, progenitor mass-loss history and circumstellar environment, and the new molecules and dust that form in the cooling, expanding ejecta. He also has a background in instrumentation, having built WIRC+Pol, a low-resolution spectropolarimeter used to probe the geometry of supernovae, dust-producing massive stars, and brown dwarf atmospheres."
       },
-      {
-        text: ""
-      },
-      {
-        text: ""
-      }
     ],
-    fields: [""]
+    fields: ["Core-collapse supernovae", "Infrared observations", "Circumstellar interaction"]
   },
   {
     name: "Ramandeep Gill",
     affiliation: "Universidad Nacional Autónoma de México",
-    avatar: "", // figure
+    avatar: "/image/Ramandeep Gill.png", // figure
     bio: [
       {
-        text: ""
+        text: "Ramandeep Gill is an Assistant Professor at the Instituto de Radioastronomía y Astrofísica (IRyA), UNAM. He is a theoretical astrophysicist working on compact objects, strong magnetic fields, and relativistic outflows — in particular the physics of magnetized jets in gamma-ray bursts, multi-messenger signals from binary neutron star mergers, and the magnetic energy dissipation that drives flaring activity in magnetars. His work spans spectro-polarimetric modelling of high-energy emission, radiative transfer and kinetic simulations, jet geometry and composition, and relativistic plasma processes including magnetic reconnection and turbulence."
       },
-      {
-        text: ""
-      },
-      {
-        text: ""
-      }
     ],
-    fields: [""]
+    fields: ["Gamma-ray bursts", "Magnetars", "Relativistic plasmas"]
   },
   {
     name: "Shiang-Yu Wang",
     affiliation: "Institute of Astronomy & Astrophysics, Academia Sinica",
-    avatar: "", // figure
+    avatar: "/image/Shiang-Yu Wang.png", // figure
     bio: [
       {
-        text: ""
+        text: "Shiang-Yu Wang is a Research Fellow at the Academia Sinica Institute of Astronomy and Astrophysics (ASIAA), where he leads the optical/infrared instrumentation group. His work centres on optical and infrared astronomical instrumentation, including WIRCam for CFHT, Hyper Suprime-Cam and the Prime Focus Spectrograph (PFS) for the Subaru Telescope, and SPIRou for CFHT. He is also project manager of the Taiwan-America Occultation Survey (TAOS) and the Transneptunian Automated Occultation Survey (TAOS2), and works on the development of quantum-structure infrared detectors and infrared focal plane arrays in collaboration with Taiwanese companies and research institutes."
       },
-      {
-        text: ""
-      },
-      {
-        text: ""
-      }
     ],
-    fields: [""]
+    fields: ["Astronomical instrumentation", "Optical & infrared detectors", "Survey facilities"]
   },
 ];
 
