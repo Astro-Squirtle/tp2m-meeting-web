@@ -1,6 +1,32 @@
 "use client";
 import React, { useState } from "react";
+import katex from "katex";
+import "katex/dist/katex.min.css";
 import { Typography, Button, Card, CardBody } from "@material-tailwind/react";
+
+function MathText({ children }: { children: string }) {
+  if (!children) return null;
+  const parts = children.split(/(\$[^$]+\$)/g);
+  return (
+    <>
+      {parts.map((p, i) =>
+        p.startsWith("$") && p.endsWith("$") ? (
+          <span
+            key={i}
+            className="whitespace-nowrap"
+            dangerouslySetInnerHTML={{
+              __html: katex.renderToString(p.slice(1, -1), {
+                throwOnError: false,
+              }),
+            }}
+          />
+        ) : (
+          <span key={i}>{p}</span>
+        )
+      )}
+    </>
+  );
+}
 
 // background colors
 const TYPE_STYLES: Record<string, string> = {
@@ -20,6 +46,7 @@ type AgendaEvent = {
   type: string;
   title?: string;      
   abstract?: string;
+  links?: { label: string; url: string }[];
 };
 
 // Program data
@@ -38,30 +65,45 @@ const AGENDA_DATA: Record<string, { date: string; weekday: string; events: Agend
       { time: "08:30-08:50", task: "Registration", speaker: "-", type: "general" },
       { time: "08:50-09:00", task: "Opening remark", speaker: "-", type: "general" },
       { time: "09:00-09:30", task: "TP2m overview talk", speaker: "Wen-Ping Chen", type: "tp2m",
-        title: "", 
+        title: "The Trans-Pacific 2-m Telescope Project: Status and Perspectives", 
         abstract: "",
       },
-      { time: "09:30-09:50", task: "Contributed talk 1", speaker: "-", type: "contributed" },
-      { time: "09:50-10:10", task: "Contributed talk 2", speaker: "-", type: "contributed" },
-      { time: "10:10-10:30", task: "Contributed talk 3", speaker: "-", type: "contributed" },
+      { time: "09:30-09:50", task: "Contributed talk 1", speaker: "Antonio de Ugarte Postigo", type: "contributed",
+        title: "Two years of observations of COLIBRÍ at San Pedro Mártir Observatory",
+        abstract: ""
+       },
+      { time: "09:50-10:10", task: "Contributed talk 2", speaker: "Rosa Leticia Becerra Godínez ", type: "contributed" },
+      { time: "10:10-10:30", task: "Contributed talk 3", speaker: "Ting-Wan Chen", type: "contributed",
+        title: "Rapid Follow-up with the Lulin 1-m Telescope: Lessons for a Future 2-m Time-Domain Facility",
+        abstract: "Rapid follow-up observations are essential for time-domain astronomy, where the scientific value of many events depends on observations obtained within hours to days after discovery. Over the past years, the Lulin 1-m Telescope has provided a flexible platform for responding to a broad range of time-sensitive targets, including young supernovae, fast-evolving transients, GRBs and fast X-ray transients. In this talk, I will present Taiwan’s experience in building a rapid follow-up framework around the Lulin telescopes. I will highlight several science cases, including early multi-colour observations of the nearby Type IIP supernova 2024ggi, optical follow-up of Einstein Probe fast X-ray transients, and rapid characterisation of newly discovered or unusual transients. I will also discuss practical aspects of target selection, observing cadence, multi-colour photometry, and coordination with international discovery and follow-up networks. These experiences provide useful guidance for the science planning of a future 2-m telescope, which can extend rapid follow-up to fainter targets and support a broader range of transient science."
+       },
       { time: "10:30-11:00", task: "break/poster", speaker: "-", type: "break" },
-      { time: "11:00-11:30", task: "Invited talk 1", speaker: "dali kong",type: "invited",
+      { time: "11:00-11:30", task: "Invited talk 1", speaker: "-",type: "invited",
         title: "",
         abstract: "",
       },
-      { time: "11:30-11:50", task: "Contributed talk 4", speaker: "Laurence Sabin", type: "contributed" },
+      { time: "11:30-11:50", task: "Contributed talk 4", speaker: "Laurence Sabin", type: "contributed",
+        title: "Searching for the Missing Members of the Galactic Evolved Stellar Population with the TP2m",
+        abstract: "Evolved stellar populations, including planetary nebulae, symbiotic stars, and cataclysmic variables, represent critical, yet incompletely catalogued, stages of stellar evolution. Despite systematic surveys, a substantial fraction of the Galactic population of these objects and surrounding nebulae remains undiscovered or unconfirmed, limiting our understanding of late-stage stellar evolution, binary interaction, and mass-loss processes. This project aims to identify and characterise newly detected evolved stars through dedicated photometric and spectroscopic follow-up using the TP2m. Candidates drawn from (recent) narrow-band imaging surveys  will be observed to confirm their nature, measure key diagnostic emission-line ratios, and derive fundamental stellar and nebular parameters such as temperature, luminosity, chemical abundances, and morphology. Particular attention will be given to distinguishing true planetary nebulae from mimics and to characterising symbiotic stars as well as cataclysmic variable systems exhibiting outburst or variability signatures. The resulting dataset will expand the census of Galactic evolved stars, providing new candidates for population studies and constraints on stellar evolutionary models."
+       },
       { time: "11:50-14:00", task: "Lunch", speaker: "-", type: "general" },
       { time: "14:00-14:30", task: "Invited talk 2", speaker: "Ramandeep Gill", type: "invited",
         title: "A Complete Understanding of GRB Jets and their Environments from Afterglow Lightcurve and Polarization",
         abstract: "Gamma-ray bursts (GRBs) are powered by narrowly collimated ultra-relativistic jets, emission from which is tightly beamed in the direction of motion. Only a modest fraction (around 10 - 20 per cent) of the total energy in these jets power the short-lived but bright “prompt” gamma-ray burst, while the remaining kinetic energy is emitted over weeks to months in a broadband synchrotron “afterglow”. The afterglow is produced when the jet is slowed down by sweeping up the external medium in its path. This long-lasting emission, in particular the optical emission, holds several clues to unravel the properties of the jet and the environment in which it propagates. For example, in some cases, the peak of the optical afterglow is used to constrain the radius where the jet decelerates and that in turn is used to constrain its initial bulk Lorentz factor. As the jet slows down, the angular size of the observable jet surface grows. This allows to probe its angular structure, which is not so well understood, and its knowledge has direct implications for the jet composition (strongly or weakly magnetized jet) and the physics of jet break out from the confining medium, i.e. stellar envelope for collapsars and dynamical ejecta for merger-driven bursts. Finally, optical afterglow polarization measurements are an indispensable tool to learn about the poorly understood magnetic field structure in both the relativistic ejecta and that produced at the collisionless external forward shock. This talk will present several examples of how the broadband modeling of the afterglow lightcurve and polarization can be used to understand the dynamics, angular structure, and magnetic field composition in GRB jets as well as the properties of the environment in which GRB progenitors are born.",
       },
-      { time: "14:30-14:50", task: "Contributed talk 5", speaker: "-", type: "contributed" },
-      { time: "14:50-15:10", task: "Contributed talk 6", speaker: "-", type: "contributed" },
-      { time: "15:10-15:30", task: "Contributed talk 7", speaker: "-", type: "contributed" },
+      { time: "14:30-14:50", task: "Contributed talk 5", speaker: "Diego González Buitrago", type: "contributed" },
+      { time: "14:50-15:10", task: "Contributed talk 6", speaker: "Wenwen Zuo", type: "contributed",
+        title: "Investigating the variability of low mass AGN candidates",
+        abstract: ""
+       },
+      { time: "15:10-15:30", task: "Contributed talk 7", speaker: "Praveen Kumar Dhankar", type: "contributed",
+        title: "Bayesian Analysis of Viscous Modified Cosmic Chaplygin Gas in FRW Universe with a Cosmological Constant",
+        abstract: "In this work, we have studied the viscous Modified Cosmic Chaplygin Gas (MCCG) in the appearance of acosmological constant within the FRW model of the universe. We assume that the bulk viscosity ξ and thecosmological constant Λ are linear combinations of two terms: one constant and the other dependent on thedark energy density ρ. In this work, we solve the resulting non-linear differential equations both analyticallyand numerically, obtaining the time evolution of the dark energy density. Using detailed calculations withinthe FRW framework, we derive an H(z) model and constrain its parameters through Bayesian statistical anal-ysis, specifically via the Markov Chain Monte Carlo (MCMC) method, employing observational Hubble data(OHD), the Pantheon Plus, RSD, Union3 and DESI BAO datasets. Additionally, we have employed combineddatasets such as CC+PP,CC+PP+RSD, CC+PP+RSD+DESI and CC+PP+RSD+DESI+Union3."
+       },
       { time: "15:30-15:40", task: "Conference photo", speaker: "-", type: "general"},
       { time: "15:40-16:10", task: "break/poster", speaker: "-", type: "break" },
-      { time: "16:10-16:30", task: "Contributed talk 8", speaker: "-", type: "contributed" },
-      { time: "16:30-16:50", task: "Contributed talk 9", speaker: "-", type: "contributed" },
+      { time: "16:10-16:30", task: "Contributed talk 8", speaker: "Sergei Jarikov", type: "contributed" },
+      { time: "16:30-16:50", task: "Contributed talk 9", speaker: "Ping Chen", type: "contributed" },
     ],
   },
   "Day 3": {
@@ -69,22 +111,22 @@ const AGENDA_DATA: Record<string, { date: string; weekday: string; events: Agend
     weekday: "Wednesday",
     events: [
       { time: "09:10-09:40", task: "Invited talk 3", speaker: "Bing Zhang", type: "invited" },
-      { time: "09:40-10:00", task: "Contributed talk 10", speaker: "-", type: "contributed" },
+      { time: "09:40-10:00", task: "Contributed talk 10 (Remote)", speaker: "Gagik Tovmassian", type: "contributed" },
       { time: "10:00-10:30", task: "Invited talk 4 (Remote)", speaker: "Fabio De Colle", type: "invited", 
         title: "Constraining inhomogeneities in SNe, FBOTs, and other high-energy transients from unresolved radio observations",
-        abstract: "Synchrotron emission from high-energy transients is produced by relativistic electrons accelerated by shocks. Since these sources are generally unresolved, constraining the structure of their emitting regions is challenging. Their synchrotron self-absorption (SSA) spectra often show broader turnovers or optically thick slopes shallower than the standard $F_\\nu \\propto \\nu^{5/2}$ prediction, usually interpreted phenomenologically. Here, we show that these deviations can instead be used to directly probe inhomogeneities in unresolved emitting regions. We demonstrate how inhomogeneities modify the low-frequency spectrum and how their properties can be constrained from observations. Applying our method to the stripped-envelope supernova SN 2016coi and the fast blue optical transient AT2018cow, we find strong evidence for inhomogeneities in SN 2016coi and asymmetry in AT2018cow, and constrain the properties of their emitting regions. Our results establish SSA spectra as a powerful, model-independent probe of unresolved structure in high-energy transients, including supernovae, FBOTs, tidal disruption events, and gamma-ray bursts."
+        abstract: String.raw`Synchrotron emission from high-energy transients is produced by relativistic electrons accelerated by shocks. Since these sources are generally unresolved, constraining the structure of their emitting regions is challenging. Their synchrotron self-absorption (SSA) spectra often show broader turnovers or optically thick slopes shallower than the standard $F_\nu \propto \nu^{5/2}$ prediction, usually interpreted phenomenologically. Here, we show that these deviations can instead be used to directly probe inhomogeneities in unresolved emitting regions. We demonstrate how inhomogeneities modify the low-frequency spectrum and how their properties can be constrained from observations. Applying our method to the stripped-envelope supernova SN 2016coi and the fast blue optical transient AT2018cow, we find strong evidence for inhomogeneities in SN 2016coi and asymmetry in AT2018cow, and constrain the properties of their emitting regions. Our results establish SSA spectra as a powerful, model-independent probe of unresolved structure in high-energy transients, including supernovae, FBOTs, tidal disruption events, and gamma-ray bursts.`
       },
       { time: "10:30-11:00", task: "break/poster", speaker: "-", type: "break" },
       { time: "11:00-11:30", task: "Invited talk 5", speaker: "Christina Thöne", type: "invited" },
-      { time: "11:30-11:50", task: "Contributed talk 11", speaker: "-", type: "contributed" },
+      { time: "11:30-11:50", task: "Contributed talk 11", speaker: "Yun-Wei Yu", type: "contributed" },
       { time: "11:50-14:00", task: "Lunch", speaker: "-", type: "general" },
       { time: "14:00-14:30", task: "Invited talk 6", speaker: "Shiang-Yu Wang", type: "invited",
         title: "The status of the Transneptunian Automated Occultation Survey",
         abstract: "The Transneptunian Automated Occultation Survey (TAOS II) aims to measure the size distribution of small (D ~ 1 km) Trans-Neptunian Objects. Such objects are very faint (r' > 40) and are undetectable by even the largest telescopes. TAOS II is a blind survey, designed to simultaneously monitor many stars (typically 5000) at a 20 Hz cadence in order to detect serendipitous occultation events. TAOS II is operating three 1.3 m telescopes at San Pedro Martir Observatory in Baja California, Mexico. Each telescope is equipped with a custom 88 Mpix CMOS camera, capable of reading out up to 12,000 sub-frames around our target stars at a cadence of 20 Hz. TAOS II began survey operations in 2025 September, and has already collected well over one-million star-hours of high-cadence photometry. In this presentation, the performance of the TAOS II system will be presented, along with statistics of the observations."
       },
-      { time: "14:30-14:50", task: "Contributed talk 12", speaker: "-", type: "contributed" },
-      { time: "14:50-15:10", task: "Contributed talk 13", speaker: "-", type: "contributed" },
-      { time: "15:10-15:30", task: "Contributed talk 14", speaker: "-", type: "contributed" },
+      { time: "14:30-14:50", task: "Contributed talk 12", speaker: "Yilen Gomez Maqueo Chew ", type: "contributed" },
+      { time: "14:50-15:10", task: "Contributed talk 13", speaker: "Artem Aguichine", type: "contributed" },
+      { time: "15:10-15:30", task: "Contributed talk 14", speaker: "Julio César Ramirez Velez", type: "contributed" },
       { time: "15:30-16:00", task: "break/poster", speaker: "-", type: "break" },
       { time: "16:00-18:00", task: "TP2m discussions", speaker: "-", type: "tp2m" },
       { time: "19:00-", task: "conference dinner", speaker: "-", type: "general" },
@@ -95,27 +137,52 @@ const AGENDA_DATA: Record<string, { date: string; weekday: string; events: Agend
     weekday: "Thursday",
     events: [
       { time: "09:10-09:40", task: "Invited talk 7", speaker: "Juan Hernández Santisteban", type: "invited",
-        title: "TBD",
+        title: "",
         abstract: "Active galactic nuclei (AGN) exhibit variability across a wide range of timescales and wavelengths, offering a powerful probe of accretion onto supermassive black holes. In this talk, I will present results from the AGN monitoring Key Projects conducted with the Las Cumbres Observatory (LCO) global robotic telescope network. Robotic facilities enable efficient, homogeneous, and high-cadence observations over months to years, providing datasets that are difficult to obtain with traditionally scheduled telescopes. By tracking continuum variations across multiple wavelengths, we can measure inter-band time delays that reveal the structure and temperature profile of AGN accretion discs. At the same time, spectroscopic monitoring captures the delayed response of broad emission lines, allowing us to isolate the broad-line region and map its geometry and dynamics through reverberation mapping. When combined with complementary space-based UV and X-ray observations, these multiwavelength campaigns provide powerful constraints on the physical origin of AGN variability. I will discuss recent results on accretion-disc structure, black hole mass measurements, and the emerging potential of continuum reverberation-mapped AGN as cosmological distance indicators, illustrating the unique role of robotic telescope networks in modern time-domain astrophysics."
       },
-      { time: "09:40-10:00", task: "Contributed talk 15", speaker: "-", type: "contributed" },
-      { time: "10:00-10:20", task: "Contributed talk 16", speaker: "-", type: "contributed" },
-      { time: "10:20-10:40", task: "Contributed talk 17", speaker: "-", type: "contributed" },
+      { time: "09:40-10:00", task: "Contributed talk 15 (Remote)", speaker: "Víctor Manuel Patiño Álvarez", type: "contributed" },
+      { time: "10:00-10:20", task: "Contributed talk 16 (Remote)", speaker: "Jonathan U. Guerrero González", type: "contributed" },
+      { time: "10:20-10:40", task: "Contributed talk 17 (Remote)", speaker: "Emma Margarita Pereyra Talamantes", type: "contributed" },
       { time: "10:40-11:00", task: "break/poster", speaker: "-", type: "break" },
       { time: "11:00-11:30", task: "Invited talk 8", speaker: "Kaew Samaporn Tinyanont", type: "invited",
         title: "Probing circumstellar medium near and far in core-collapse supernovae using robotic spectroscopy and near-infrared imaging",
         abstract: "Mass loss is crucial to the evolution of massive stars, dictating their final structure at death and responsible for the observed diversity in the population of core-collapse supernovae (CCSNe). Multiple mechanisms are at play, from wind-driven mass loss, binary interaction, and eruption responsible for dense circumstellar medium (CSM) seen in some CCSNe. Observing the SN shock and light interact with the CSM can help us reconstruct the mass loss history and constrain the relative contributions from these mechanisms. I will discuss rapid robotic spectroscopy, to be enabled by TP2m and similar facilities like DARTS on the 2.4-m APF, of young CCSNe to constrain the most close-in CSM ejected only years to decades before death, likely associated with late-stage nuclear burning instabilities. I will also discuss using near-infrared (IR) imaging to catch emerging IR echoes from the CSM dust far from the progenitor star. Such observations can be used to measure the geometry of the CSM, in turn constraining the mass loss mechanism. I will discuss the recent observations of SN 2024aecx as a test case. Surveying for IR echoes in a large number of stripped-envelope SNe, to be made possible for the first time with TP2m, will help us identify the mechanism responsible for hydrogen stripping in stripped envelope SNe.",
        },
-      { time: "11:30-11:50", task: "Contributed talk 18", speaker: "-", type: "contributed" },
+      { time: "11:30-11:50", task: "Contributed talk 18", speaker: "Liangduan Liu", type: "contributed",
+        title: "TransFit: Bridging Analytic Models and Radiation-Transport Simulations for Supernova Light Curves",
+        abstract: "Supernova light-curve modeling requires a compromise between physical accuracy and computational efficiency. Analytic diffusion models are fast and suitable for parameter inference, but often neglect the spatial and temporal evolution of the ejecta. Detailed radiation-transport simulations provide a more complete physical description, but their computational cost limits their application to large samples.\nI will introduce TransFit, a fast framework for solving time-dependent radiative diffusion in expanding supernova ejecta. The model follows the radial evolution of energy density and temperature, supports flexible heating distributions and evolving opacity, and can consistently combine multiple power sources. Applications to shock cooling, radioactive heating, and double-peaked supernovae will be presented, together with comparisons to analytic and radiation-transport models. I will also discuss extensions to magnetar-powered transients, circumstellar interaction, and hydrogen recombination in Type IIP supernovae. By balancing physical realism with computational efficiency, TransFit provides a practical framework for parameter inference and systematic studies of diverse supernova light curves."
+       },
       { time: "11:50-14:00", task: "Lunch", speaker: "-", type: "general" },
       { time: "14:00-14:30", task: "Invited talk 9 (Remote)", speaker: "Antonio Martín-Carrillo", type: "invited" },
-      { time: "14:30-14:50", task: "Contributed talk 19", speaker: "-", type: "contributed" },
-      { time: "14:50-15:10", task: "Contributed talk 20", speaker: "-", type: "contributed" },
-      { time: "15:10-15:30", task: "Contributed talk 21", speaker: "-", type: "contributed" },
+      { time: "14:30-14:50", task: "Contributed talk 19", speaker: "Wenxiong Li", type: "contributed",
+        title: "Study Supernovae with The Einstein Probe",
+        abstract: "I will present recent updates on prompt X-ray emission from supernovae with Einstein Probe. So far, about 10 SNe have been discovered by EP, all classified as broad-lined Type Ic (Ic-BL) SNe. Interestingly, their prompt X-ray emission exhibits unexpected diversity, with potential physical origins ranging from relativistic jets to (relativistic) shock breakouts. These observations offer valuable insights into a range of astrophysical processes, including mass loss, angular momentum transfer, jet formation, energy dissipation between relativistic outflows and stellar envelopes, and the mechanisms powering the initial kinetic energy of supernova explosions."
+       },
+      { time: "14:50-15:10", task: "Contributed talk 20", speaker: "Xinxiang Sun", type: "contributed" },
+      { time: "15:10-15:30", task: "Contributed talk 21", speaker: "Runduo Liang", type: "contributed",
+        title: "Optical Counterparts of Einstein Probe eFXTs: From Archival Surveys to Real-Time Discovery",
+        abstract: String.raw`Extragalactic fast X-ray transients (eFXTs) are an emerging class of high-energy phenomena whose physical origins remain largely uncertain. The wide-field, high-sensitivity monitoring capability of the Einstein Probe (EP) has significantly increased the discovery rate of these events.
+        We present an ongoing program aimed at identifying optical counterparts to EP-detected eFXT candidates through a systematic search of publicly available optical survey data and transient databases (such as ZTF, LSST, and TNS). We report the first results of this effort, focusing on EP240506a, which we associate with the UV/optical transient AT 2024ofs. Spectroscopic observations of its host galaxy with the Very Large Telescope (VLT) yield a redshift of $z = 0.120 \pm 0.002$. Combining archival survey data with early-time multiwavelength observations, we find that both the luminosity and light-curve evolution of AT 2024ofs are consistent with a core-collapse supernova origin
+        Through detectability simulations, we estimate a local event rate density of $\rho = 8.8^{+21.2}_{-3.9}\ \mathrm{yr^{-1}\,Gpc^{-3}}$ for EP240506a-like events. After correcting for observational completeness, we infer a rate of approximately 36--78 $\mathrm{yr^{-1}\,Gpc^{-3}}$ for EP-detected X-ray transients associated with supernovae
+        Our one-year search indicates that the main source of contamination arises from chance coincidences due to the large localization uncertainties and low signal-to-noise ratios. Long-term monitoring of eFXTs is crucial for identifying late-time thermal emission, particularly from supernovae, as illustrated by the recent case of EP260131a, which exhibited a prolonged plateau phase in both X-ray and optical bands, along with tight constraints on supernovae at late times.
+        These results highlight EP’s unique capability to capture prompt high-energy emission from core-collapse supernovae and underscore the critical importance of rapid multiwavelength follow-up for future eFXT discoveries. They also demonstrate the strong potential for maximizing scientific return through coordinated wide-field survey efforts, such as those by WFST and LSST.`
+       },
       { time: "15:30-16:00", task: "break/poster", speaker: "-", type: "break" },
-      { time: "16:00-16:20", task: "Contributed talk 22", speaker: "-", type: "contributed" },
-      { time: "16:20-16:40", task: "Contributed talk 23", speaker: "-", type: "contributed" },
-      { time: "16:40-17:00", task: "Contributed talk 24", speaker: "-", type: "contributed" },
+      { time: "16:00-16:20", task: "Contributed talk 22", speaker: "Qinyu Wu", type: "contributed",
+        title: "The First Catalog of Extragalactic Fast X-ray Transients Discovered by the Einstein Probe",
+        abstract: "Extragalactic Fast X-ray Transients (EFXTs), characterized by brief, powerful X-ray flares, are critical probes of the universe's most extreme events. The Einstein Probe (EP) mission, with its advanced wide-field monitoring and rapid follow-up capabilities, enables the first systematic survey and characterization of these elusive events. We present the first comprehensive catalog of the bright EFXTs detected by EP during its first year and a half of operations, covering the in-orbit calibration phase and the first year of science nominal operations. The catalog comprises 107 candidate events with durations ranging from approximately 30 seconds to 2100 seconds and peak fluxes ranging from ~2×10⁻¹⁰ to 4×10⁻⁷ erg s⁻¹ cm⁻² in the 0.5–4 keV band. Through cross-matching with gamma-ray detectors, we assign 36 (34%) EFXTs to the gamma-ray burst (GRB)-associated group, including two tentative associations. The remaining 71 (66%) events, although lacking GRB counterparts, are covered by different gamma-ray monitors, for which we derive upper limits for each event. Notably, 32 of these EFXTs have obtained redshift measurements spanning from z = 0.12 to z = 4.859, enabled by the extensive follow-up observations by the broader astronomical community. Our systematic analysis reveals both the temporal and spectral properties of the EFXT population from the Wide-field X-ray Telescope (WXT) and their long-term X-ray counterparts from the Follow-up X-ray Telescope (FXT). The results provide crucial insights into the physical mechanisms driving these enigmatic transients and demonstrating EP's powerful capabilities in exploring the dynamic X-ray universe."
+       },
+      { time: "16:20-16:40", task: "Contributed talk 23", speaker: "Lingzhi Wang", type: "contributed",
+        title: "CO and Dust formation in Supernovae",
+        abstract: "The origins of cosmic dust remain a mystery, with supernovae (SNe) identified as significant contributors to dust production. Molecule formation following SNe explosions plays a crucial role in this process, as it efficiently cools the ejecta to a temperature suitable for dust condensation. To date, carbon monoxide (CO) molecules have been observed in only a few core-collapse SNe. In this talk, I will talk about CO and dust formation in core-collapse and Type Ia SNe.",
+        links: [
+          { label: "Nature Astronomy (2024)", url: "https://www.nature.com/articles/s41550-024-02197-9" },
+        ],
+       },
+      { time: "16:40-17:00", task: "Contributed talk 24", speaker: "Yen-Chen Pan", type: "contributed",
+        title: "Exploring the Thermonuclear Supernova Zoo with TP2m",
+        abstract: "Thermonuclear supernovae exhibit substantial diversity in their luminosities and spectral features, reflecting differences in their progenitor systems and explosion mechanisms. TP2m will  be a powerful facility for systematic follow-up of this thermonuclear supernova zoo. Rapid and high-cadence spectroscopy can precisely trace the early evolution of the ejecta, while long-term optical and infrared photometry can reveal unusual fading rates, delayed interaction, and dust formation. I will discuss potential observing strategies, science programs, and collaborative synergies that could be developed within TP2m."
+       },
     ],
   },
   "Day 5": {
@@ -294,7 +361,7 @@ export default function ProgramPage() {
                                   </Typography>
                                   {/* @ts-ignore */}
                                   <Typography variant="h6" color="blue-gray" className="mb-4 leading-snug">
-                                    {item.title}
+                                    <MathText>{item.title}</MathText>
                                   </Typography>
                                 </>
                               )}
@@ -306,10 +373,28 @@ export default function ProgramPage() {
                                   </Typography>
                                   {/* @ts-ignore */}
                                   <Typography className="text-blue-gray-800 text-[15px] leading-relaxed whitespace-pre-line text-justify">
-                                    {item.abstract}
+                                    <MathText>{item.abstract}</MathText>
                                   </Typography>
                                 </>
                               )}
+                              {item.links?.length ? (
+                              <div className="mt-4 flex flex-wrap gap-2">
+                                {item.links.map((l, i) => (
+                                  <a
+                                    key={i}
+                                    href={l.url}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="inline-flex items-center gap-1 rounded-full border border-blue-200 bg-blue-50 px-3 py-1 text-sm font-medium text-blue-700 transition-colors hover:bg-blue-100"
+                                  >
+                                    {l.label}
+                                    <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+                                      <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+                                    </svg>
+                                  </a>
+                                ))}
+                              </div>
+                            ) : null}
                             </div>
                           </div>
                         </div>
