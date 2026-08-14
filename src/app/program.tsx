@@ -110,7 +110,10 @@ const AGENDA_DATA: Record<string, { date: string; weekday: string; events: Agend
     date: "Aug 26",
     weekday: "Wednesday",
     events: [
-      { time: "09:10-09:40", task: "Invited talk 3", speaker: "Bing Zhang", type: "invited" },
+      { time: "09:10-09:40", task: "Invited talk 3", speaker: "Bing Zhang", type: "invited",
+        title: "Multi-wavelength, multi-messenger astrophysics in the EP & SVOM era",
+        abstract: "I will review multi-wavelength, multi-messenger astrophysics in the area of cosmological transients such as gamma-ray bursts and fast X-ray transients, with emphasize on the recent observational progress led by Einstein Probe and SVOM as well as theoretical understanding of the rich phenomena."
+       },
       { time: "09:40-10:00", task: "Contributed talk 10 (Remote)", speaker: "Gagik Tovmassian", type: "contributed" },
       { time: "10:00-10:30", task: "Invited talk 4 (Remote)", speaker: "Fabio De Colle", type: "invited", 
         title: "Constraining inhomogeneities in SNe, FBOTs, and other high-energy transients from unresolved radio observations",
@@ -137,7 +140,7 @@ const AGENDA_DATA: Record<string, { date: string; weekday: string; events: Agend
     weekday: "Thursday",
     events: [
       { time: "09:10-09:40", task: "Invited talk 7", speaker: "Juan Hernández Santisteban", type: "invited",
-        title: "",
+        title: "Probing the origin of AGN variability with robotic observations",
         abstract: "Active galactic nuclei (AGN) exhibit variability across a wide range of timescales and wavelengths, offering a powerful probe of accretion onto supermassive black holes. In this talk, I will present results from the AGN monitoring Key Projects conducted with the Las Cumbres Observatory (LCO) global robotic telescope network. Robotic facilities enable efficient, homogeneous, and high-cadence observations over months to years, providing datasets that are difficult to obtain with traditionally scheduled telescopes. By tracking continuum variations across multiple wavelengths, we can measure inter-band time delays that reveal the structure and temperature profile of AGN accretion discs. At the same time, spectroscopic monitoring captures the delayed response of broad emission lines, allowing us to isolate the broad-line region and map its geometry and dynamics through reverberation mapping. When combined with complementary space-based UV and X-ray observations, these multiwavelength campaigns provide powerful constraints on the physical origin of AGN variability. I will discuss recent results on accretion-disc structure, black hole mass measurements, and the emerging potential of continuum reverberation-mapped AGN as cosmological distance indicators, illustrating the unique role of robotic telescope networks in modern time-domain astrophysics."
       },
       { time: "09:40-10:00", task: "Contributed talk 15 (Remote)", speaker: "Víctor Manuel Patiño Álvarez", type: "contributed" },

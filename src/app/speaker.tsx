@@ -49,7 +49,7 @@ const SPEAKERS_DATA = [
     fields: ["Gamma-Ray Bursts", "Core-collapse supernovae", "Tidal disruption events"]
   },
   {
-    name: "Juan Venancio",
+    name: "Juan Hernández Santisteban",
     affiliation: "University of St Andrews",
     avatar: "/image/Juan Venancio.png", // figure
     bio: [
@@ -87,10 +87,10 @@ const SPEAKERS_DATA = [
     avatar: "/image/Shiang-Yu Wang.png", // figure
     bio: [
       {
-        text: "Shiang-Yu Wang is a Research Fellow at the Academia Sinica Institute of Astronomy and Astrophysics (ASIAA), where he leads the optical/infrared instrumentation group. His work centres on optical and infrared astronomical instrumentation, including WIRCam for CFHT, Hyper Suprime-Cam and the Prime Focus Spectrograph (PFS) for the Subaru Telescope, and SPIRou for CFHT. He is also project manager of the Taiwan-America Occultation Survey (TAOS) and the Transneptunian Automated Occultation Survey (TAOS2), and works on the development of quantum-structure infrared detectors and infrared focal plane arrays in collaboration with Taiwanese companies and research institutes."
+        text: "Shiang-Yu Wang is a Research Fellow at the Academia Sinica Institute of Astronomy and Astrophysics (ASIAA), where he leads the optical/infrared instrumentation group. His work centres on optical and infrared astronomical instrumentation, including WIRCam and SPIRou for CFHT, Hyper Suprime-Cam and the Prime Focus Spectrograph (PFS) for the Subaru Telescope, METIS for ELT and GMTNIRS and G-CLEF for GMT. He is also project PI of the Taiwan-America Occultation Survey (TAOS) and the Transneptunian Automated Occultation Survey (TAOS2), and works on the development of novel infrared detectors and single photon detectors in collaboration with Taiwanese companies and research institutes."
       },
     ],
-    fields: ["Astronomical instrumentation", "Optical & infrared detectors", "Survey facilities"]
+    fields: ["Astronomical instrumentation", "Optical & infrared detectors", "Small solar system bodies"]
   },
 ];
 
