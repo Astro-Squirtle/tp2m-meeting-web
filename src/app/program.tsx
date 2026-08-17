@@ -118,7 +118,9 @@ const AGENDA_DATA: Record<string, { date: string; weekday: string; events: Agend
         title: "Searching for the Missing Members of the Galactic Evolved Stellar Population with the TP2m",
         abstract: "Evolved stellar populations, including planetary nebulae, symbiotic stars, and cataclysmic variables, represent critical, yet incompletely catalogued, stages of stellar evolution. Despite systematic surveys, a substantial fraction of the Galactic population of these objects and surrounding nebulae remains undiscovered or unconfirmed, limiting our understanding of late-stage stellar evolution, binary interaction, and mass-loss processes. This project aims to identify and characterise newly detected evolved stars through dedicated photometric and spectroscopic follow-up using the TP2m. Candidates drawn from (recent) narrow-band imaging surveys  will be observed to confirm their nature, measure key diagnostic emission-line ratios, and derive fundamental stellar and nebular parameters such as temperature, luminosity, chemical abundances, and morphology. Particular attention will be given to distinguishing true planetary nebulae from mimics and to characterising symbiotic stars as well as cataclysmic variable systems exhibiting outburst or variability signatures. The resulting dataset will expand the census of Galactic evolved stars, providing new candidates for population studies and constraints on stellar evolutionary models."
        },
-      { time: "11:20-11:40", task: "Contributed talk 5", speaker: "Ping Chen", type: "contributed" },
+      { time: "11:20-11:40", task: "Contributed talk 5", speaker: "Ping Chen", type: "contributed",
+        title: "Explore massive binary evolution with supernova-related phenomena"
+       },
       { time: "", task: "Lunch", speaker: "-", type: "session" },
       { time: "11:40-14:00", task: "Lunch", speaker: "-", type: "general" },
       { time: "", task: "Afternoon Session", speaker: "-", type: "session", chair: "Chow-Choong Ngeow" },
