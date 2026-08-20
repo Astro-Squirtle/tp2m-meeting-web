@@ -1,59 +1,58 @@
-Name,Affiliation
-Ting-Wan Chen,NCU
-Sheng Yang,HNAS
-Ming-Hsin Chang,IANCU
-王隆廷,中央大學天文所
-Chow-Choong Ngeow,"Graduate Institute of Astronomy, National Central University"
-Antonio de Ugarte Postigo,LAM
-Dr Praveen Kumar Dhankar,"Symbiosis Institute of Technology, Nagpur Campus, Symbiosis International (Deemed University),  Pune-440008, India"
-張永欣,NCU
-Liangduan Liu,Central China Normal University
-YuHao Zhang,Central China Normal University
-Yen-Chen Pan,National Central University
-Wen-Ping CHEN,NCU
-Laurence Sabin,"IA-UNAM, Ensenada"
-Hubing Xiao,Shanghai Normal University
-Gagik Tovmassian,IA UNAM
-Chao-Wei Tsai,"National Astronomical Observatories, Chinese Academy of Sciences"
-Diego González ,UNAM Ensenada 
-Julio Ramirez,"Instituto de Astronomía, UNAM"
-Chan Park,IGWA HNAS
-Junjie Zhao,"Institute for Gravitational Wave Astronomy, HNAS"
-Juntao Bai,Henan Academy of Sciences
-he gao,Beijing Normal University
-Darshan Kumar,"Institute for Gravitational Wave Astronomy, Henan Academy of Sciences"
-Lingzhi Wang,Hainan Tropical Ocean University(海南热带海洋学院)
-Yuhang Zhao,HNAS
-Dachun Qiang,Henan Academy of Sciences
-Jie Zheng,HNAS
-zhiqiang You,hnas
-Fengge Zhang,HNAS
-Sergey Zharikov (Serguei Jarikov),IA UNAM-Ens
-Wenxiong Li,NAOC
-Yilen Gómez Maqueo Chew,Instituto de Astronomía UNAM
-wenwen zuo,Shanghai Astronomical Observatory Chinese Academy of Sciences
-Hengxiao Guo,SHAO
-Jinliang Hou,Shanghai Astronomical Observatory CAS
-Mingxia Huang,INAF – Osservatorio Astronomico di Padova Astronomy at the University of Padova
-Lei Hao,SHAO
-Antonio Martín-Carrillo,University College Dublin
-Kaew Samaporn Tinyanont,National Astronomical Research Institute of Thailand
-Juan Venancio,University of St Andrews
-Shiang-Yu Wang,"Institute of Astronomy and Astrophysics, Academia Sinica"
-Fabio De Colle,Institute of Nuclear Sciences ICN-UNAM
-Bing Zhang,The University of Hong Kong
-Christina Thöne,"Czech Academy of Sciences, Astronomical Institute"
-Ramandeep Gill,Universidad Nacional Autónoma de México
-Rosa Leticia Becerra Godínez,UNAM
-Wenke Ren,Shanghai Astronomical Observatory
-Dong Xu,"National Astronomical Observatories,Chinese Academy of Sciences"
-Jonhatan Uriel Guerrero-González,"Instituto Nacional de Astrofísica, Óptica y Electrónica (INAOE)"
-Anli Tsai,TARA/NCU
-Shiang-Yu Wang,ASIAA
-Dr. Víctor Manuel Patiño Álvarez,"National Institute for Astrophysics, Optics, and Electronics (INAOE)"
-Qinyu Wu,"National Astronomical Observatories, Chinese Academy of Sciences"
-Runduo Liang,NAOC
-Xinxiang Sun,NAOC
-Ping Chen,Zhejiang University
-侯金良, Shanghai Astronomical Observatory
-俞云伟, CCNU
+Name,Affiliation,Attendance
+Ting-Wan Chen,NCU,In-person
+Sheng Yang,HNAS,In-person
+Ming-Hsin Chang,IANCU,In-person
+Chow-Choong Ngeow,"Graduate Institute of Astronomy, National Central University",In-person
+Antonio de Ugarte Postigo,LAM,In-person
+Dr Praveen Kumar Dhankar,"Symbiosis Institute of Technology, Nagpur Campus, Symbiosis International (Deemed University),  Pune-440008, India",In-person
+Yung-Hsin Chang,NCU,In-person
+Liangduan Liu,Central China Normal University,In-person
+YuHao Zhang,Central China Normal University,In-person
+Yen-Chen Pan,National Central University,In-person
+Wen-Ping CHEN,NCU,In-person
+Laurence Sabin,"IA-UNAM, Ensenada",In-person
+Hubing Xiao,Shanghai Normal University,In-person
+Gagik Tovmassian,IA UNAM,In-person
+Chao-Wei Tsai,"National Astronomical Observatories, Chinese Academy of Sciences",In-person
+Diego González ,UNAM Ensenada,In-person
+Julio Ramirez,"Instituto de Astronomía, UNAM",In-person
+Chan Park,IGWA HNAS,In-person
+Junjie Zhao,"Institute for Gravitational Wave Astronomy, HNAS",In-person
+Juntao Bai,Henan Academy of Sciences,In-person
+he gao,Beijing Normal University,In-person
+Darshan Kumar,"Institute for Gravitational Wave Astronomy, Henan Academy of Sciences",In-person
+Lingzhi Wang,Hainan Tropical Ocean University,In-person
+Yuhang Zhao,HNAS,In-person
+Dachun Qiang,Henan Academy of Sciences,In-person
+Jie Zheng,HNAS,In-person
+zhiqiang You,hnas,In-person
+Fengge Zhang,HNAS,In-person
+Sergey Zharikov (Serguei Jarikov),IA UNAM-Ens,In-person
+Wenxiong Li,NAOC,In-person
+Yilen Gómez Maqueo Chew,Instituto de Astronomía UNAM,In-person
+wenwen zuo,Shanghai Astronomical Observatory Chinese Academy of Sciences,In-person
+Hengxiao Guo,SHAO,In-person
+Jinliang Hou,Shanghai Astronomical Observatory CAS,In-person
+Mingxia Huang,INAF – Osservatorio Astronomico di Padova Astronomy at the University of Padova,Virtual
+Lei Hao,SHAO,In-person
+Antonio Martín-Carrillo,University College Dublin,In-person
+Kaew Samaporn Tinyanont,National Astronomical Research Institute of Thailand,In-person
+Juan Venancio,University of St Andrews,In-person
+Shiang-Yu Wang,"Institute of Astronomy and Astrophysics, Academia Sinica",In-person
+Fabio De Colle,Institute of Nuclear Sciences ICN-UNAM,In-person
+Bing Zhang,The University of Hong Kong,In-person
+Christina Thöne,"Czech Academy of Sciences, Astronomical Institute",In-person
+Ramandeep Gill,Universidad Nacional Autónoma de México,In-person
+Rosa Leticia Becerra Godínez,UNAM,In-person
+Wenke Ren,Shanghai Astronomical Observatory,In-person
+Dong Xu,"National Astronomical Observatories,Chinese Academy of Sciences",In-person
+Jonhatan Uriel Guerrero-González,"Instituto Nacional de Astrofísica, Óptica y Electrónica (INAOE)",Virtual
+Anli Tsai,TARA/NCU,Virtual
+Shiang-Yu Wang,ASIAA,In-person
+Dr. Víctor Manuel Patiño Álvarez,"National Institute for Astrophysics, Optics, and Electronics (INAOE)",Virtual
+Qinyu Wu,"National Astronomical Observatories, Chinese Academy of Sciences",In-person
+Runduo Liang,NAOC,In-person
+Xinxiang Sun,NAOC,In-person
+Ping Chen,Zhejiang University,In-person
+Yun-Wei Yu, CCNU,In-person
+Rwei-Ju Chuang, Fujen University,In-person
