@@ -96,7 +96,7 @@ const AGENDA_DATA: Record<string, { date: string; weekday: string; events: Agend
     events: [
       { time: "", task: "Morning Session", speaker: "-", type: "session", chair: "Sheng Yang" },
       { time: "08:30-08:50", task: "Registration", speaker: "-", type: "general" },
-      { time: "08:50-09:00", task: "Opening remark", speaker: "-", type: "general" },
+      { time: "08:50-09:00", task: "Opening remark", speaker: "Zong-Hong Zhu", type: "general" },
       { time: "09:00-09:30", task: "TP2m overview talk", speaker: "Wen-Ping Chen", type: "tp2m",
         title: "The Trans-Pacific 2-m Telescope Project: Status and Perspectives", 
         abstract: "",
@@ -215,7 +215,13 @@ const AGENDA_DATA: Record<string, { date: string; weekday: string; events: Agend
         title: "Study Supernovae with The Einstein Probe",
         abstract: "I will present recent updates on prompt X-ray emission from supernovae with Einstein Probe. So far, about 10 SNe have been discovered by EP, all classified as broad-lined Type Ic (Ic-BL) SNe. Interestingly, their prompt X-ray emission exhibits unexpected diversity, with potential physical origins ranging from relativistic jets to (relativistic) shock breakouts. These observations offer valuable insights into a range of astrophysical processes, including mass loss, angular momentum transfer, jet formation, energy dissipation between relativistic outflows and stellar envelopes, and the mechanisms powering the initial kinetic energy of supernova explosions."
        },
-      { time: "14:50-15:10", task: "Contributed talk 21", speaker: "Xinxiang Sun", type: "contributed" },
+      { time: "14:50-15:10", task: "Contributed talk 21", speaker: "Lingzhi Wang", type: "contributed",
+        title: "CO and Dust formation in Supernovae",
+        abstract: "The origins of cosmic dust remain a mystery, with supernovae (SNe) identified as significant contributors to dust production. Molecule formation following SNe explosions plays a crucial role in this process, as it efficiently cools the ejecta to a temperature suitable for dust condensation. To date, carbon monoxide (CO) molecules have been observed in only a few core-collapse SNe. In this talk, I will talk about CO and dust formation in core-collapse and Type Ia SNe.",
+        links: [
+          { label: "Nature Astronomy (2024)", url: "https://www.nature.com/articles/s41550-024-02197-9" },
+        ],
+       },
       { time: "15:10-15:30", task: "Contributed talk 22", speaker: "Runduo Liang", type: "contributed",
         title: "Optical Counterparts of Einstein Probe eFXTs: From Archival Surveys to Real-Time Discovery",
         abstract: String.raw`Extragalactic fast X-ray transients (eFXTs) are an emerging class of high-energy phenomena whose physical origins remain largely uncertain. The wide-field, high-sensitivity monitoring capability of the Einstein Probe (EP) has significantly increased the discovery rate of these events.
@@ -229,14 +235,7 @@ const AGENDA_DATA: Record<string, { date: string; weekday: string; events: Agend
         title: "The First Catalog of Extragalactic Fast X-ray Transients Discovered by the Einstein Probe",
         abstract: "Extragalactic Fast X-ray Transients (EFXTs), characterized by brief, powerful X-ray flares, are critical probes of the universe's most extreme events. The Einstein Probe (EP) mission, with its advanced wide-field monitoring and rapid follow-up capabilities, enables the first systematic survey and characterization of these elusive events. We present the first comprehensive catalog of the bright EFXTs detected by EP during its first year and a half of operations, covering the in-orbit calibration phase and the first year of science nominal operations. The catalog comprises 107 candidate events with durations ranging from approximately 30 seconds to 2100 seconds and peak fluxes ranging from ~2×10⁻¹⁰ to 4×10⁻⁷ erg s⁻¹ cm⁻² in the 0.5–4 keV band. Through cross-matching with gamma-ray detectors, we assign 36 (34%) EFXTs to the gamma-ray burst (GRB)-associated group, including two tentative associations. The remaining 71 (66%) events, although lacking GRB counterparts, are covered by different gamma-ray monitors, for which we derive upper limits for each event. Notably, 32 of these EFXTs have obtained redshift measurements spanning from z = 0.12 to z = 4.859, enabled by the extensive follow-up observations by the broader astronomical community. Our systematic analysis reveals both the temporal and spectral properties of the EFXT population from the Wide-field X-ray Telescope (WXT) and their long-term X-ray counterparts from the Follow-up X-ray Telescope (FXT). The results provide crucial insights into the physical mechanisms driving these enigmatic transients and demonstrating EP's powerful capabilities in exploring the dynamic X-ray universe."
        },
-      { time: "16:20-16:40", task: "Contributed talk 24", speaker: "Lingzhi Wang", type: "contributed",
-        title: "CO and Dust formation in Supernovae",
-        abstract: "The origins of cosmic dust remain a mystery, with supernovae (SNe) identified as significant contributors to dust production. Molecule formation following SNe explosions plays a crucial role in this process, as it efficiently cools the ejecta to a temperature suitable for dust condensation. To date, carbon monoxide (CO) molecules have been observed in only a few core-collapse SNe. In this talk, I will talk about CO and dust formation in core-collapse and Type Ia SNe.",
-        links: [
-          { label: "Nature Astronomy (2024)", url: "https://www.nature.com/articles/s41550-024-02197-9" },
-        ],
-       },
-      { time: "16:40-17:00", task: "Contributed talk 25", speaker: "Yen-Chen Pan", type: "contributed",
+      { time: "16:20-16:40", task: "Contributed talk 24", speaker: "Yen-Chen Pan", type: "contributed",
         title: "Exploring the Thermonuclear Supernova Zoo with TP2m",
         abstract: "Thermonuclear supernovae exhibit substantial diversity in their luminosities and spectral features, reflecting differences in their progenitor systems and explosion mechanisms. TP2m will  be a powerful facility for systematic follow-up of this thermonuclear supernova zoo. Rapid and high-cadence spectroscopy can precisely trace the early evolution of the ejecta, while long-term optical and infrared photometry can reveal unusual fading rates, delayed interaction, and dust formation. I will discuss potential observing strategies, science programs, and collaborative synergies that could be developed within TP2m."
        },
