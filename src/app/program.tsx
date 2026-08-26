@@ -180,7 +180,7 @@ const AGENDA_DATA: Record<string, { date: string; weekday: string; events: Agend
       { time: "15:30-16:00", task: "Break/Poster", speaker: "-", type: "break" },
       { time: "16:00-18:00", task: "TP2m / sub-group discussions", speaker: "-", type: "tp2m" },
       { time: "", task: "Banquet", speaker: "-", type: "session" },
-      { time: "19:00-21:00", task: "Conference dinner", speaker: "-", type: "general" },
+      { time: "18:00-21:00", task: "Conference dinner", speaker: "-", type: "general" },
     ],
   },
   "Day 4": {
@@ -197,7 +197,10 @@ const AGENDA_DATA: Record<string, { date: string; weekday: string; events: Agend
         title: "Variability-guided Spectroscopic Characterization of BZQ Candidates with TP2m/ESOPO",
         abstract: "We present a variability-guided spectroscopic program aimed at expanding the spectroscopically verified sample of quasar-type blazars (BZQs) in the Roma-5BZCAT. This project builds on our previous SDSS-based study of 610 BZQs, where optical spectroscopy, ZTF variability, and radio morphology were combined to classify sources as Confirmed, Possible, and Non-Confirmed BZQs. However, 1299 Roma-5BZCAT BZQs lack SDSS optical spectra and therefore remain outside the same homogeneous spectroscopic and multiwavelength framework. Using geometric observability from OAN-SPM, ZTF DR24 light curves, and quiescent-state optical magnitudes, we define and prioritize a practical TP2m/ESOPO target sample. The proposed observations will provide single-epoch optical spectra to identify broad emission lines, measure or refine spectroscopic redshifts, and determine which candidates can be incorporated into an expanded BZQ sample. This program highlights the role of TP2m/ESOPO as a dedicated facility for systematic follow-up of variability-selected AGN candidates and as a pathfinder for future time-domain blazar studies."
        },
-      { time: "10:20-10:40", task: "Contributed talk 18 (Remote)", speaker: "Emma Margarita Pereyra Talamantes", type: "contributed" },
+      { time: "10:20-10:40", task: "Contributed talk 18", speaker: "Yen-Chen Pan", type: "contributed",
+        title: "Exploring the Thermonuclear Supernova Zoo with TP2m",
+        abstract: "Thermonuclear supernovae exhibit substantial diversity in their luminosities and spectral features, reflecting differences in their progenitor systems and explosion mechanisms. TP2m will  be a powerful facility for systematic follow-up of this thermonuclear supernova zoo. Rapid and high-cadence spectroscopy can precisely trace the early evolution of the ejecta, while long-term optical and infrared photometry can reveal unusual fading rates, delayed interaction, and dust formation. I will discuss potential observing strategies, science programs, and collaborative synergies that could be developed within TP2m."
+       },
       { time: "10:40-11:00", task: "Break/Poster", speaker: "-", type: "break" },
       { time: "11:00-11:30", task: "Invited talk 8", speaker: "Kaew Samaporn Tinyanont", type: "invited",
         title: "Probing circumstellar medium near and far in core-collapse supernovae using robotic spectroscopy and near-infrared imaging",
@@ -237,10 +240,6 @@ const AGENDA_DATA: Record<string, { date: string; weekday: string; events: Agend
       { time: "16:00-16:20", task: "Contributed talk 23", speaker: "Qinyu Wu", type: "contributed",
         title: "The First Catalog of Extragalactic Fast X-ray Transients Discovered by the Einstein Probe",
         abstract: "Extragalactic Fast X-ray Transients (EFXTs), characterized by brief, powerful X-ray flares, are critical probes of the universe's most extreme events. The Einstein Probe (EP) mission, with its advanced wide-field monitoring and rapid follow-up capabilities, enables the first systematic survey and characterization of these elusive events. We present the first comprehensive catalog of the bright EFXTs detected by EP during its first year and a half of operations, covering the in-orbit calibration phase and the first year of science nominal operations. The catalog comprises 107 candidate events with durations ranging from approximately 30 seconds to 2100 seconds and peak fluxes ranging from ~2×10⁻¹⁰ to 4×10⁻⁷ erg s⁻¹ cm⁻² in the 0.5–4 keV band. Through cross-matching with gamma-ray detectors, we assign 36 (34%) EFXTs to the gamma-ray burst (GRB)-associated group, including two tentative associations. The remaining 71 (66%) events, although lacking GRB counterparts, are covered by different gamma-ray monitors, for which we derive upper limits for each event. Notably, 32 of these EFXTs have obtained redshift measurements spanning from z = 0.12 to z = 4.859, enabled by the extensive follow-up observations by the broader astronomical community. Our systematic analysis reveals both the temporal and spectral properties of the EFXT population from the Wide-field X-ray Telescope (WXT) and their long-term X-ray counterparts from the Follow-up X-ray Telescope (FXT). The results provide crucial insights into the physical mechanisms driving these enigmatic transients and demonstrating EP's powerful capabilities in exploring the dynamic X-ray universe."
-       },
-      { time: "16:20-16:40", task: "Contributed talk 24", speaker: "Yen-Chen Pan", type: "contributed",
-        title: "Exploring the Thermonuclear Supernova Zoo with TP2m",
-        abstract: "Thermonuclear supernovae exhibit substantial diversity in their luminosities and spectral features, reflecting differences in their progenitor systems and explosion mechanisms. TP2m will  be a powerful facility for systematic follow-up of this thermonuclear supernova zoo. Rapid and high-cadence spectroscopy can precisely trace the early evolution of the ejecta, while long-term optical and infrared photometry can reveal unusual fading rates, delayed interaction, and dust formation. I will discuss potential observing strategies, science programs, and collaborative synergies that could be developed within TP2m."
        },
     ],
   },
